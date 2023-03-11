@@ -5,6 +5,5 @@ target 'Job Finder1' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Job Finder1
-
+pod 
 end
