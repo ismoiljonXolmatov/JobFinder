@@ -10,7 +10,6 @@
 		184C00FA29BB7FC9002F9A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00F929BB7FC9002F9A3E /* AppDelegate.swift */; };
 		184C00FC29BB7FC9002F9A3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00FB29BB7FC9002F9A3E /* SceneDelegate.swift */; };
 		184C00FE29BB7FC9002F9A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00FD29BB7FC9002F9A3E /* ViewController.swift */; };
-		184C010129BB7FC9002F9A3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184C00FF29BB7FC9002F9A3E /* Main.storyboard */; };
 		184C010329BB7FCB002F9A3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184C010229BB7FCB002F9A3E /* Assets.xcassets */; };
 		184C010629BB7FCB002F9A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184C010429BB7FCB002F9A3E /* LaunchScreen.storyboard */; };
 		184C012129BB8898002F9A3E /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184C010E29BB8898002F9A3E /* Poppins-ExtraLight.ttf */; };
@@ -32,6 +31,19 @@
 		184C013129BB8898002F9A3E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184C011E29BB8898002F9A3E /* Poppins-SemiBold.ttf */; };
 		184C013229BB8898002F9A3E /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184C011F29BB8898002F9A3E /* Poppins-Italic.ttf */; };
 		184C013329BB8898002F9A3E /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184C012029BB8898002F9A3E /* Poppins-MediumItalic.ttf */; };
+		184C013529BC3E8F002F9A3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013429BC3E8F002F9A3E /* ProfileViewController.swift */; };
+		184C013729BC3F8D002F9A3E /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013629BC3F8D002F9A3E /* Sizes.swift */; };
+		184C013929BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013829BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift */; };
+		184C013B29BC4D72002F9A3E /* CollectionReusableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013A29BC4D72002F9A3E /* CollectionReusableClass.swift */; };
+		184C013D29BC90D0002F9A3E /* VerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013C29BC90D0002F9A3E /* VerticalCollectionViewCell.swift */; };
+		184C014529BCD391002F9A3E /* SetFiltersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C014329BCD391002F9A3E /* SetFiltersVC.swift */; };
+		184C014629BCD391002F9A3E /* SetFiltersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184C014429BCD391002F9A3E /* SetFiltersVC.xib */; };
+		18F1A59029BCD79000A69ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */; };
+		18F1A59129BCD79000A69ADE /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */; };
+		18F1A59429BCED4500A69ADE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A59229BCED4500A69ADE /* SignInViewController.swift */; };
+		18F1A59529BCED4500A69ADE /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A59329BCED4500A69ADE /* SignInViewController.xib */; };
+		18F1A59829BCF82000A69ADE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A59629BCF82000A69ADE /* SignUpViewController.swift */; };
+		18F1A59929BCF82000A69ADE /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A59729BCF82000A69ADE /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +51,6 @@
 		184C00F929BB7FC9002F9A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184C00FB29BB7FC9002F9A3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		184C00FD29BB7FC9002F9A3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		184C010029BB7FC9002F9A3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		184C010229BB7FCB002F9A3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184C010529BB7FCB002F9A3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184C010729BB7FCB002F9A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +73,19 @@
 		184C011E29BB8898002F9A3E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		184C011F29BB8898002F9A3E /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		184C012029BB8898002F9A3E /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		184C013429BC3E8F002F9A3E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		184C013629BC3F8D002F9A3E /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		184C013829BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewCell.swift; sourceTree = "<group>"; };
+		184C013A29BC4D72002F9A3E /* CollectionReusableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableClass.swift; sourceTree = "<group>"; };
+		184C013C29BC90D0002F9A3E /* VerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCollectionViewCell.swift; sourceTree = "<group>"; };
+		184C014329BCD391002F9A3E /* SetFiltersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFiltersVC.swift; sourceTree = "<group>"; };
+		184C014429BCD391002F9A3E /* SetFiltersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetFiltersVC.xib; sourceTree = "<group>"; };
+		18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		18F1A59229BCED4500A69ADE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		18F1A59329BCED4500A69ADE /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		18F1A59629BCF82000A69ADE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		18F1A59729BCF82000A69ADE /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				184C00F829BB7FC9002F9A3E /* Job Finder1 */,
+				184C013629BC3F8D002F9A3E /* Sizes.swift */,
 				184C010D29BB8898002F9A3E /* Poppins */,
 				184C00F729BB7FC9002F9A3E /* Products */,
 			);
@@ -95,12 +120,12 @@
 		184C00F829BB7FC9002F9A3E /* Job Finder1 */ = {
 			isa = PBXGroup;
 			children = (
-				184C00F929BB7FC9002F9A3E /* AppDelegate.swift */,
-				184C00FB29BB7FC9002F9A3E /* SceneDelegate.swift */,
-				184C00FD29BB7FC9002F9A3E /* ViewController.swift */,
-				184C00FF29BB7FC9002F9A3E /* Main.storyboard */,
+				184C013F29BC9320002F9A3E /* Cells */,
+				184C013E29BC92FB002F9A3E /* StoryBoards */,
+				184C014029BC934D002F9A3E /* Resources */,
+				184C014229BC937C002F9A3E /* Views */,
+				184C014129BC9372002F9A3E /* Controllers */,
 				184C010229BB7FCB002F9A3E /* Assets.xcassets */,
-				184C010429BB7FCB002F9A3E /* LaunchScreen.storyboard */,
 				184C010729BB7FCB002F9A3E /* Info.plist */,
 			);
 			path = "Job Finder1";
@@ -130,6 +155,57 @@
 				184C012029BB8898002F9A3E /* Poppins-MediumItalic.ttf */,
 			);
 			path = Poppins;
+			sourceTree = "<group>";
+		};
+		184C013E29BC92FB002F9A3E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				184C010429BB7FCB002F9A3E /* LaunchScreen.storyboard */,
+				184C014429BCD391002F9A3E /* SetFiltersVC.xib */,
+				18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */,
+				18F1A59329BCED4500A69ADE /* SignInViewController.xib */,
+				18F1A59729BCF82000A69ADE /* SignUpViewController.xib */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		184C013F29BC9320002F9A3E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				184C013829BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift */,
+				184C013C29BC90D0002F9A3E /* VerticalCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		184C014029BC934D002F9A3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				184C00F929BB7FC9002F9A3E /* AppDelegate.swift */,
+				184C00FB29BB7FC9002F9A3E /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		184C014129BC9372002F9A3E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				184C013429BC3E8F002F9A3E /* ProfileViewController.swift */,
+				18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */,
+				18F1A59629BCF82000A69ADE /* SignUpViewController.swift */,
+				184C014329BCD391002F9A3E /* SetFiltersVC.swift */,
+				184C00FD29BB7FC9002F9A3E /* ViewController.swift */,
+				18F1A59229BCED4500A69ADE /* SignInViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		184C014229BC937C002F9A3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				184C013A29BC4D72002F9A3E /* CollectionReusableClass.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F1A59129BCD79000A69ADE /* LaunchViewController.xib in Resources */,
 				184C013029BB8898002F9A3E /* Poppins-Thin.ttf in Resources */,
 				184C013329BB8898002F9A3E /* Poppins-MediumItalic.ttf in Resources */,
 				184C012B29BB8898002F9A3E /* OFL.txt in Resources */,
@@ -199,11 +276,14 @@
 				184C013129BB8898002F9A3E /* Poppins-SemiBold.ttf in Resources */,
 				184C012429BB8898002F9A3E /* Poppins-BoldItalic.ttf in Resources */,
 				184C012529BB8898002F9A3E /* Poppins-Light.ttf in Resources */,
+				184C014629BCD391002F9A3E /* SetFiltersVC.xib in Resources */,
 				184C012F29BB8898002F9A3E /* Poppins-Black.ttf in Resources */,
 				184C013229BB8898002F9A3E /* Poppins-Italic.ttf in Resources */,
 				184C012929BB8898002F9A3E /* Poppins-ExtraBold.ttf in Resources */,
 				184C012D29BB8898002F9A3E /* Poppins-LightItalic.ttf in Resources */,
+				18F1A59929BCF82000A69ADE /* SignUpViewController.xib in Resources */,
 				184C010629BB7FCB002F9A3E /* LaunchScreen.storyboard in Resources */,
+				18F1A59529BCED4500A69ADE /* SignInViewController.xib in Resources */,
 				184C012729BB8898002F9A3E /* Poppins-SemiBoldItalic.ttf in Resources */,
 				184C012C29BB8898002F9A3E /* Poppins-Regular.ttf in Resources */,
 				184C012829BB8898002F9A3E /* Poppins-ExtraBoldItalic.ttf in Resources */,
@@ -211,7 +291,6 @@
 				184C012229BB8898002F9A3E /* Poppins-ThinItalic.ttf in Resources */,
 				184C012629BB8898002F9A3E /* Poppins-Medium.ttf in Resources */,
 				184C010329BB7FCB002F9A3E /* Assets.xcassets in Resources */,
-				184C010129BB7FC9002F9A3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,8 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F1A59429BCED4500A69ADE /* SignInViewController.swift in Sources */,
+				184C013D29BC90D0002F9A3E /* VerticalCollectionViewCell.swift in Sources */,
+				18F1A59029BCD79000A69ADE /* LaunchViewController.swift in Sources */,
 				184C00FE29BB7FC9002F9A3E /* ViewController.swift in Sources */,
+				184C013B29BC4D72002F9A3E /* CollectionReusableClass.swift in Sources */,
+				184C013729BC3F8D002F9A3E /* Sizes.swift in Sources */,
+				18F1A59829BCF82000A69ADE /* SignUpViewController.swift in Sources */,
+				184C013929BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift in Sources */,
 				184C00FA29BB7FC9002F9A3E /* AppDelegate.swift in Sources */,
+				184C014529BCD391002F9A3E /* SetFiltersVC.swift in Sources */,
+				184C013529BC3E8F002F9A3E /* ProfileViewController.swift in Sources */,
 				184C00FC29BB7FC9002F9A3E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,14 +319,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		184C00FF29BB7FC9002F9A3E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				184C010029BB7FC9002F9A3E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		184C010429BB7FCB002F9A3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -376,7 +456,6 @@
 				INFOPLIST_FILE = "Job Finder1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,7 +483,6 @@
 				INFOPLIST_FILE = "Job Finder1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

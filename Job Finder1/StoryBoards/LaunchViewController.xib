@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchViewController" customModule="Job_Finder1" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Freelancer" translatesAutoresizingMaskIntoConstraints="NO" id="BqZ-nH-XRA">
+                    <rect key="frame" x="19" y="139" width="355" height="355"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="355" id="HQI-1U-AXz"/>
+                        <constraint firstAttribute="height" constant="355" id="oPb-JS-8Wm"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Perfact Job Match" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWY-g5-VwJ">
+                    <rect key="frame" x="40.666666666666657" y="534" width="312" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="312" id="QNN-Df-0aa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding your dream job is more easire and faster with JobHub" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAD-d8-hic">
+                    <rect key="frame" x="40" y="638" width="313" height="45"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrF-Fc-9aa">
+                    <rect key="frame" x="19" y="708" width="355" height="55"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.066666666669999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="CbO-8X-k99"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Let’s Get Started -&gt;">
+                        <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="letsStartButton:" destination="-1" eventType="touchUpInside" id="MkT-E8-SoB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BqZ-nH-XRA" firstAttribute="trailing" secondItem="qrF-Fc-9aa" secondAttribute="trailing" id="4fX-gS-Cki"/>
+                <constraint firstItem="BqZ-nH-XRA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="5z9-SK-yLD"/>
+                <constraint firstItem="SAD-d8-hic" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="L5f-or-EVd"/>
+                <constraint firstItem="qrF-Fc-9aa" firstAttribute="top" secondItem="SAD-d8-hic" secondAttribute="bottom" constant="25" id="a5a-qE-iXo"/>
+                <constraint firstAttribute="trailing" secondItem="SAD-d8-hic" secondAttribute="trailing" constant="40" id="eDk-wQ-m0E"/>
+                <constraint firstItem="BqZ-nH-XRA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fWO-0I-WgO"/>
+                <constraint firstItem="SAD-d8-hic" firstAttribute="top" secondItem="JWY-g5-VwJ" secondAttribute="bottom" constant="20" id="jI1-8k-x0J"/>
+                <constraint firstItem="BqZ-nH-XRA" firstAttribute="leading" secondItem="qrF-Fc-9aa" secondAttribute="leading" id="jm3-ok-CXU"/>
+                <constraint firstItem="qrF-Fc-9aa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="kcg-jF-cGa"/>
+                <constraint firstItem="JWY-g5-VwJ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lDq-lJ-hDP"/>
+                <constraint firstItem="JWY-g5-VwJ" firstAttribute="top" secondItem="BqZ-nH-XRA" secondAttribute="bottom" constant="40" id="uZM-wu-xrM"/>
+            </constraints>
+            <point key="canvasLocation" x="336.64122137404581" y="37.323943661971832"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Freelancer" width="354" height="355"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
