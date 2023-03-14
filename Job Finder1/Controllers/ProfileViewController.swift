@@ -14,7 +14,7 @@ class ProfileViewController: UIViewController {
     
     
     @IBAction func tapFilterButton(_ sender: Any) {
-        let vc = SetFilterVC()
+        let vc = SetFiltersVC()
         vc.title = "Set Filters"
         present(vc, animated: true)
        }
