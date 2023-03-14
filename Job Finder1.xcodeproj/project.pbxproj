@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1825219329C03ED9009FFE26 /* SetFilterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1825219229C03ED9009FFE26 /* SetFilterVC.storyboard */; };
 		184C00FA29BB7FC9002F9A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00F929BB7FC9002F9A3E /* AppDelegate.swift */; };
 		184C00FC29BB7FC9002F9A3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00FB29BB7FC9002F9A3E /* SceneDelegate.swift */; };
 		184C00FE29BB7FC9002F9A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00FD29BB7FC9002F9A3E /* ViewController.swift */; };
@@ -31,22 +32,24 @@
 		184C013129BB8898002F9A3E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184C011E29BB8898002F9A3E /* Poppins-SemiBold.ttf */; };
 		184C013229BB8898002F9A3E /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184C011F29BB8898002F9A3E /* Poppins-Italic.ttf */; };
 		184C013329BB8898002F9A3E /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184C012029BB8898002F9A3E /* Poppins-MediumItalic.ttf */; };
-		184C013529BC3E8F002F9A3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013429BC3E8F002F9A3E /* ProfileViewController.swift */; };
 		184C013729BC3F8D002F9A3E /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013629BC3F8D002F9A3E /* Sizes.swift */; };
-		184C013929BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013829BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift */; };
 		184C013B29BC4D72002F9A3E /* CollectionReusableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013A29BC4D72002F9A3E /* CollectionReusableClass.swift */; };
-		184C013D29BC90D0002F9A3E /* VerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C013C29BC90D0002F9A3E /* VerticalCollectionViewCell.swift */; };
-		184C014529BCD391002F9A3E /* SetFiltersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C014329BCD391002F9A3E /* SetFiltersVC.swift */; };
-		184C014629BCD391002F9A3E /* SetFiltersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184C014429BCD391002F9A3E /* SetFiltersVC.xib */; };
+		185DE5AF29BE1AC600DF8406 /* ProfileHorizontalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE5AD29BE1AC600DF8406 /* ProfileHorizontalCVC.swift */; };
+		185DE5BA29BEE91F00DF8406 /* ConfigureColllectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE5B929BEE91F00DF8406 /* ConfigureColllectionView.swift */; };
+		185DE5BC29BEE99700DF8406 /* VerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE5BB29BEE99700DF8406 /* VerticalCollectionViewCell.swift */; };
+		185DE5C329BF8C7A00DF8406 /* SetFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE5C129BF8C7A00DF8406 /* SetFilterVC.swift */; };
 		18F1A59029BCD79000A69ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */; };
 		18F1A59129BCD79000A69ADE /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */; };
 		18F1A59429BCED4500A69ADE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A59229BCED4500A69ADE /* SignInViewController.swift */; };
 		18F1A59529BCED4500A69ADE /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A59329BCED4500A69ADE /* SignInViewController.xib */; };
 		18F1A59829BCF82000A69ADE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A59629BCF82000A69ADE /* SignUpViewController.swift */; };
 		18F1A59929BCF82000A69ADE /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A59729BCF82000A69ADE /* SignUpViewController.xib */; };
+		18F1A59C29BE00FE00A69ADE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A59A29BE00FE00A69ADE /* ProfileViewController.swift */; };
+		18F1A59D29BE00FE00A69ADE /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A59B29BE00FE00A69ADE /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1825219229C03ED9009FFE26 /* SetFilterVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetFilterVC.storyboard; sourceTree = "<group>"; };
 		184C00F629BB7FC9002F9A3E /* Job Finder1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Job Finder1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C00F929BB7FC9002F9A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184C00FB29BB7FC9002F9A3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,19 +76,20 @@
 		184C011E29BB8898002F9A3E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		184C011F29BB8898002F9A3E /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		184C012029BB8898002F9A3E /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
-		184C013429BC3E8F002F9A3E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		184C013629BC3F8D002F9A3E /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
-		184C013829BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewCell.swift; sourceTree = "<group>"; };
 		184C013A29BC4D72002F9A3E /* CollectionReusableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableClass.swift; sourceTree = "<group>"; };
-		184C013C29BC90D0002F9A3E /* VerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCollectionViewCell.swift; sourceTree = "<group>"; };
-		184C014329BCD391002F9A3E /* SetFiltersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFiltersVC.swift; sourceTree = "<group>"; };
-		184C014429BCD391002F9A3E /* SetFiltersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetFiltersVC.xib; sourceTree = "<group>"; };
+		185DE5AD29BE1AC600DF8406 /* ProfileHorizontalCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHorizontalCVC.swift; sourceTree = "<group>"; };
+		185DE5B929BEE91F00DF8406 /* ConfigureColllectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureColllectionView.swift; sourceTree = "<group>"; };
+		185DE5BB29BEE99700DF8406 /* VerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCollectionViewCell.swift; sourceTree = "<group>"; };
+		185DE5C129BF8C7A00DF8406 /* SetFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFilterVC.swift; sourceTree = "<group>"; };
 		18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		18F1A59229BCED4500A69ADE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		18F1A59329BCED4500A69ADE /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		18F1A59629BCF82000A69ADE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		18F1A59729BCF82000A69ADE /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		18F1A59A29BE00FE00A69ADE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18F1A59B29BE00FE00A69ADE /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +124,8 @@
 		184C00F829BB7FC9002F9A3E /* Job Finder1 */ = {
 			isa = PBXGroup;
 			children = (
-				184C013F29BC9320002F9A3E /* Cells */,
-				184C013E29BC92FB002F9A3E /* StoryBoards */,
+				184C013F29BC9320002F9A3E /* CellsXibs */,
+				184C013E29BC92FB002F9A3E /* ControllersXibs */,
 				184C014029BC934D002F9A3E /* Resources */,
 				184C014229BC937C002F9A3E /* Views */,
 				184C014129BC9372002F9A3E /* Controllers */,
@@ -157,25 +161,24 @@
 			path = Poppins;
 			sourceTree = "<group>";
 		};
-		184C013E29BC92FB002F9A3E /* StoryBoards */ = {
+		184C013E29BC92FB002F9A3E /* ControllersXibs */ = {
 			isa = PBXGroup;
 			children = (
 				184C010429BB7FCB002F9A3E /* LaunchScreen.storyboard */,
-				184C014429BCD391002F9A3E /* SetFiltersVC.xib */,
 				18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */,
 				18F1A59329BCED4500A69ADE /* SignInViewController.xib */,
 				18F1A59729BCF82000A69ADE /* SignUpViewController.xib */,
+				18F1A59B29BE00FE00A69ADE /* ProfileViewController.xib */,
+				1825219229C03ED9009FFE26 /* SetFilterVC.storyboard */,
 			);
-			path = StoryBoards;
+			path = ControllersXibs;
 			sourceTree = "<group>";
 		};
-		184C013F29BC9320002F9A3E /* Cells */ = {
+		184C013F29BC9320002F9A3E /* CellsXibs */ = {
 			isa = PBXGroup;
 			children = (
-				184C013829BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift */,
-				184C013C29BC90D0002F9A3E /* VerticalCollectionViewCell.swift */,
 			);
-			path = Cells;
+			path = CellsXibs;
 			sourceTree = "<group>";
 		};
 		184C014029BC934D002F9A3E /* Resources */ = {
@@ -190,12 +193,12 @@
 		184C014129BC9372002F9A3E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				184C013429BC3E8F002F9A3E /* ProfileViewController.swift */,
 				18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */,
 				18F1A59629BCF82000A69ADE /* SignUpViewController.swift */,
-				184C014329BCD391002F9A3E /* SetFiltersVC.swift */,
 				184C00FD29BB7FC9002F9A3E /* ViewController.swift */,
 				18F1A59229BCED4500A69ADE /* SignInViewController.swift */,
+				18F1A59A29BE00FE00A69ADE /* ProfileViewController.swift */,
+				185DE5C129BF8C7A00DF8406 /* SetFilterVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,8 +207,19 @@
 			isa = PBXGroup;
 			children = (
 				184C013A29BC4D72002F9A3E /* CollectionReusableClass.swift */,
+				18D0EAF229BE165E0009FEF9 /* New Group */,
+				185DE5B929BEE91F00DF8406 /* ConfigureColllectionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		18D0EAF229BE165E0009FEF9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				185DE5AD29BE1AC600DF8406 /* ProfileHorizontalCVC.swift */,
+				185DE5BB29BEE99700DF8406 /* VerticalCollectionViewCell.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,12 +290,12 @@
 				184C013129BB8898002F9A3E /* Poppins-SemiBold.ttf in Resources */,
 				184C012429BB8898002F9A3E /* Poppins-BoldItalic.ttf in Resources */,
 				184C012529BB8898002F9A3E /* Poppins-Light.ttf in Resources */,
-				184C014629BCD391002F9A3E /* SetFiltersVC.xib in Resources */,
 				184C012F29BB8898002F9A3E /* Poppins-Black.ttf in Resources */,
 				184C013229BB8898002F9A3E /* Poppins-Italic.ttf in Resources */,
 				184C012929BB8898002F9A3E /* Poppins-ExtraBold.ttf in Resources */,
 				184C012D29BB8898002F9A3E /* Poppins-LightItalic.ttf in Resources */,
 				18F1A59929BCF82000A69ADE /* SignUpViewController.xib in Resources */,
+				18F1A59D29BE00FE00A69ADE /* ProfileViewController.xib in Resources */,
 				184C010629BB7FCB002F9A3E /* LaunchScreen.storyboard in Resources */,
 				18F1A59529BCED4500A69ADE /* SignInViewController.xib in Resources */,
 				184C012729BB8898002F9A3E /* Poppins-SemiBoldItalic.ttf in Resources */,
@@ -290,6 +304,7 @@
 				184C012E29BB8898002F9A3E /* Poppins-Bold.ttf in Resources */,
 				184C012229BB8898002F9A3E /* Poppins-ThinItalic.ttf in Resources */,
 				184C012629BB8898002F9A3E /* Poppins-Medium.ttf in Resources */,
+				1825219329C03ED9009FFE26 /* SetFilterVC.storyboard in Resources */,
 				184C010329BB7FCB002F9A3E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,17 +317,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F1A59429BCED4500A69ADE /* SignInViewController.swift in Sources */,
-				184C013D29BC90D0002F9A3E /* VerticalCollectionViewCell.swift in Sources */,
+				185DE5AF29BE1AC600DF8406 /* ProfileHorizontalCVC.swift in Sources */,
+				185DE5BA29BEE91F00DF8406 /* ConfigureColllectionView.swift in Sources */,
 				18F1A59029BCD79000A69ADE /* LaunchViewController.swift in Sources */,
 				184C00FE29BB7FC9002F9A3E /* ViewController.swift in Sources */,
 				184C013B29BC4D72002F9A3E /* CollectionReusableClass.swift in Sources */,
 				184C013729BC3F8D002F9A3E /* Sizes.swift in Sources */,
+				18F1A59C29BE00FE00A69ADE /* ProfileViewController.swift in Sources */,
 				18F1A59829BCF82000A69ADE /* SignUpViewController.swift in Sources */,
-				184C013929BC4B8B002F9A3E /* HorizontalCollectionViewCell.swift in Sources */,
+				185DE5BC29BEE99700DF8406 /* VerticalCollectionViewCell.swift in Sources */,
 				184C00FA29BB7FC9002F9A3E /* AppDelegate.swift in Sources */,
-				184C014529BCD391002F9A3E /* SetFiltersVC.swift in Sources */,
-				184C013529BC3E8F002F9A3E /* ProfileViewController.swift in Sources */,
 				184C00FC29BB7FC9002F9A3E /* SceneDelegate.swift in Sources */,
+				185DE5C329BF8C7A00DF8406 /* SetFilterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +472,8 @@
 				INFOPLIST_FILE = "Job Finder1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,8 +499,8 @@
 				INFOPLIST_FILE = "Job Finder1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

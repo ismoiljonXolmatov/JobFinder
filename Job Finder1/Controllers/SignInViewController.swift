@@ -13,7 +13,27 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    
+    @IBAction func signUpButton(_ sender: Any) {
+        let vc =  ProfileViewController()
+        vc.title = "Sign Up"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .partialCurl
+        present(vc, animated: true)
+    }
+    
 
-
-   
+    @IBAction func creatAccauntButton(_ sender: Any) {
+        
+        let vc = SignUpViewController()
+        vc.title = "Sign Up"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .partialCurl
+        present(vc, animated: true)
+  
+    }
+    
 }

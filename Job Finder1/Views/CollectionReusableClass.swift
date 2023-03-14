@@ -9,9 +9,7 @@ import UIKit
 
 class MyHeaderFooterClass: UICollectionReusableView {
     
-    
     let titleLabel = UILabel()
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.purple
@@ -23,7 +21,6 @@ class MyHeaderFooterClass: UICollectionReusableView {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    
     }
 
     override func layoutSubviews() {

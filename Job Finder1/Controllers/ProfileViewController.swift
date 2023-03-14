@@ -2,117 +2,67 @@
 //  ProfileViewController.swift
 //  Job Finder1
 //
-//  Created by Apple on 19.08.1444 (AH).
+//  Created by Apple on 20.08.1444 (AH).
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ProfileViewController: UIViewController {
+
+     
+    @IBOutlet var filterButton: UIButton!
     
     
+    @IBAction func tapFilterButton(_ sender: Any) {
+        let vc = SetFilterVC()
+        vc.title = "Set Filters"
+        present(vc, animated: true)
+       }
+      
+    @IBOutlet var collectionView: UICollectionView!
     
-    private let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCustomLayout())
+     private let viewModel = ConfigureColllectionView()
     
-    let collectionViewHeaderFooterReuseIdentifier = "MyHeaderFooterClass"
+    @IBOutlet var verticalCollectionView: UICollectionView!
     
-//    init(collectionView: UICollectionView) {
-//        self.collectionView = collectionView
-//    }
+    var data = [["google 1", "Lead Product Manager"], ["spotify", "Senior UI Designer"], ["netflix", "Visual Designer"]]
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = .systemTeal
         collectionView.delegate = self
         collectionView.dataSource = self
-        view.addSubview(collectionView)
-//        collectionView.register(
-//            UIProfileCollectionViewCell.self,
-//            forCellWithReuseIdentifier: UIProfileCollectionViewCell.identifier)
-//
-        configureCollectionView()
+        verticalCollectionView.dataSource = viewModel
+        collectionView.register(ProfileHorizontalCVC.self, forCellWithReuseIdentifier: ProfileHorizontalCVC.identifier)
+        verticalCollectionView.register(VerticalCollectionViewCell.self, forCellWithReuseIdentifier: VerticalCollectionViewCell.identifier)
     }
-    
-    private func configureCollectionView() {
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
+}
 
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 140),
-            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0),
-            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 150)
-            
-        ])
+extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
     }
     
-    
-    required init?(coder Error: NSCoder) {
-        super.init(coder: Error)
-    }
-    
-    static func createCustomLayout() -> UICollectionViewCompositionalLayout {
-        
-        let layout = UICollectionViewCompositionalLayout { (section: Int,
-                                                            environment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
-            let horizontalItem = NSCollectionLayoutItem(
-                layoutSize: NSCollectionLayoutSize(
-                    widthDimension: .fractionalWidth(0.8),
-                    heightDimension: .fractionalHeight(1)))
-            
-            horizontalItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
-            
-            let horizontalGroupSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(0.8),
-                heightDimension: .fractionalHeight(2/5))
-            
-            let horizontalGroup = NSCollectionLayoutGroup.horizontal(
-                layoutSize: horizontalGroupSize,
-                subitems: [horizontalItem])
-            
-            
-            let verticalItem = NSCollectionLayoutItem(
-                layoutSize: NSCollectionLayoutSize(
-                    widthDimension: .fractionalWidth(0.8),
-                    heightDimension: .fractionalHeight(1/3)))
-            verticalItem.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0)
-            
-            
-            let verticalGroupSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(0.8),
-                heightDimension: .fractionalHeight(3/5))
-            
-            let verticallGroup = NSCollectionLayoutGroup.horizontal(
-                layoutSize: verticalGroupSize,
-                subitems: [verticalItem])
-            
-            
-            let containerGroupSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalHeight(1))
-            
-            let containerGroup = NSCollectionLayoutGroup.vertical(
-                layoutSize: containerGroupSize,
-                subitems: [horizontalGroup, verticallGroup])
-            
-            let section = NSCollectionLayoutSection(group: containerGroup)
-            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
-            return section
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProfileHorizontalCVC.identifier, for: indexPath) as? ProfileHorizontalCVC else {
+            return UICollectionViewCell()
         }
-        return layout
-    }
-    
-        
-        
-        
-        
-        
-        //MARK: - Collection view
-        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 5
+        if indexPath.row == 0 {
+            cell.imageView.image = UIImage(named: "google 1")
+            cell.jobLabel.text = "Lead Product Manager"
+            
+        } else if indexPath.row == 1 {
+            cell.imageView.image = UIImage(named: "spotify")
+            cell.googleLb.text = "Shopify"
+            cell.jobLabel.text = "Senior UI Designer"
         }
-        
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-            return cell
+        else if indexPath.row == 2 {
+            cell.imageView.image = UIImage(named: "netflix")
+            cell.imageView.backgroundColor = .label
+            cell.googleLb.text = "Netflix"
+            cell.jobLabel.text = "Visual Designer"
         }
+        return cell
     }
-    
+}
 

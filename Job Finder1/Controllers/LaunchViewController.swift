@@ -15,13 +15,11 @@ class LaunchViewController: UIViewController {
 
 
     @IBAction func letsStartButton(_ sender: Any) {
-        
-//        self.navigationController?.pushViewController(SignInViewController(), animated: true)
-        
         let vc = SignInViewController()
-//        vc.title = "Sign in"
-//        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.title = "Sign in"
+        vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .partialCurl
         present(vc, animated: true)
         
     }

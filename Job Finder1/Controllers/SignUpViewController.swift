@@ -9,21 +9,38 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    
+    @IBOutlet var backButton: UIButton!
+    
+    @IBAction func tapBackButton(_ sender: Any) {
+        let vc = SignInViewController()
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .partialCurl
+        present(vc, animated: true)
+ 
+      }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      }
+    
+    @IBAction func signUpButton(_ sender: Any) {
+        let vc = ProfileViewController()
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .partialCurl
+        present(vc, animated: true)
+        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func signInButton(_ sender: Any) {
+        let vc = SignInViewController()
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .partialCurl
+        vc.title = "SignIn"
+        present(vc, animated: true)
     }
-    */
-
-}
+    
+    }
