@@ -12,7 +12,6 @@ class SetFiltersVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
    
 }
@@ -48,6 +47,7 @@ extension MyView {
         }
     }
 }
+
 @IBDesignable class myButton: UIButton{}
 extension myButton {
     @IBInspectable var cornerRadius: CGFloat {
@@ -79,3 +79,4 @@ extension myButton {
         }
     }
 }
+

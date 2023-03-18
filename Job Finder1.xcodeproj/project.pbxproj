@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1825219629C04022009FFE26 /* SetFiltersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825219429C04022009FFE26 /* SetFiltersVC.swift */; };
-		1825219729C04022009FFE26 /* SetFiltersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1825219529C04022009FFE26 /* SetFiltersVC.xib */; };
 		184C00FA29BB7FC9002F9A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00F929BB7FC9002F9A3E /* AppDelegate.swift */; };
 		184C00FC29BB7FC9002F9A3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00FB29BB7FC9002F9A3E /* SceneDelegate.swift */; };
 		184C00FE29BB7FC9002F9A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C00FD29BB7FC9002F9A3E /* ViewController.swift */; };
@@ -38,6 +37,15 @@
 		185DE5AF29BE1AC600DF8406 /* ProfileHorizontalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE5AD29BE1AC600DF8406 /* ProfileHorizontalCVC.swift */; };
 		185DE5BA29BEE91F00DF8406 /* ConfigureColllectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE5B929BEE91F00DF8406 /* ConfigureColllectionView.swift */; };
 		185DE5BC29BEE99700DF8406 /* VerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE5BB29BEE99700DF8406 /* VerticalCollectionViewCell.swift */; };
+		1860258629C33E6900E67161 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860258429C33E6900E67161 /* MessageViewController.swift */; };
+		1860258729C33E6900E67161 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860258529C33E6900E67161 /* MessageViewController.xib */; };
+		1860258B29C34E1E00E67161 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860258A29C34E1E00E67161 /* MessageTableViewCell.swift */; };
+		187728AE29C0C57B003C3483 /* SetFiltersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187728AD29C0C57B003C3483 /* SetFiltersVC.xib */; };
+		187728B529C0CABF003C3483 /* ApplyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187728B329C0CABF003C3483 /* ApplyVC.swift */; };
+		187728B629C0CABF003C3483 /* ApplyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187728B429C0CABF003C3483 /* ApplyVC.xib */; };
+		187728B929C0E7C9003C3483 /* JobApplyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187728B729C0E7C9003C3483 /* JobApplyCollectionCell.swift */; };
+		187728BF29C2F7A5003C3483 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187728BD29C2F7A5003C3483 /* FormViewController.swift */; };
+		187728C029C2F7A5003C3483 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187728BE29C2F7A5003C3483 /* FormViewController.xib */; };
 		18F1A59029BCD79000A69ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */; };
 		18F1A59129BCD79000A69ADE /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */; };
 		18F1A59429BCED4500A69ADE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A59229BCED4500A69ADE /* SignInViewController.swift */; };
@@ -46,11 +54,17 @@
 		18F1A59929BCF82000A69ADE /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A59729BCF82000A69ADE /* SignUpViewController.xib */; };
 		18F1A59C29BE00FE00A69ADE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A59A29BE00FE00A69ADE /* ProfileViewController.swift */; };
 		18F1A59D29BE00FE00A69ADE /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A59B29BE00FE00A69ADE /* ProfileViewController.xib */; };
+		18F43F5E29C38DFF00D071D5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43F5D29C38DFF00D071D5 /* TabBarViewController.swift */; };
+		18F43F6129C3945900D071D5 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43F5F29C3945900D071D5 /* EditProfileViewController.swift */; };
+		18F43F6229C3945900D071D5 /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F43F6029C3945900D071D5 /* EditProfileViewController.xib */; };
+		18F43F6529C3948A00D071D5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43F6329C3948A00D071D5 /* SettingsViewController.swift */; };
+		18F43F6629C3948A00D071D5 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F43F6429C3948A00D071D5 /* SettingsViewController.xib */; };
+		18F43F6929C4902200D071D5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43F6729C4902200D071D5 /* ChatViewController.swift */; };
+		18F43F6A29C4902200D071D5 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F43F6829C4902200D071D5 /* ChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1825219429C04022009FFE26 /* SetFiltersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFiltersVC.swift; sourceTree = "<group>"; };
-		1825219529C04022009FFE26 /* SetFiltersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetFiltersVC.xib; sourceTree = "<group>"; };
 		184C00F629BB7FC9002F9A3E /* Job Finder1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Job Finder1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C00F929BB7FC9002F9A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184C00FB29BB7FC9002F9A3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +96,15 @@
 		185DE5AD29BE1AC600DF8406 /* ProfileHorizontalCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHorizontalCVC.swift; sourceTree = "<group>"; };
 		185DE5B929BEE91F00DF8406 /* ConfigureColllectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureColllectionView.swift; sourceTree = "<group>"; };
 		185DE5BB29BEE99700DF8406 /* VerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCollectionViewCell.swift; sourceTree = "<group>"; };
+		1860258429C33E6900E67161 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		1860258529C33E6900E67161 /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		1860258A29C34E1E00E67161 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		187728AD29C0C57B003C3483 /* SetFiltersVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetFiltersVC.xib; sourceTree = "<group>"; };
+		187728B329C0CABF003C3483 /* ApplyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyVC.swift; sourceTree = "<group>"; };
+		187728B429C0CABF003C3483 /* ApplyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplyVC.xib; sourceTree = "<group>"; };
+		187728B729C0E7C9003C3483 /* JobApplyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplyCollectionCell.swift; sourceTree = "<group>"; };
+		187728BD29C2F7A5003C3483 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		187728BE29C2F7A5003C3483 /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
 		18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		18F1A59229BCED4500A69ADE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +113,13 @@
 		18F1A59729BCF82000A69ADE /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		18F1A59A29BE00FE00A69ADE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		18F1A59B29BE00FE00A69ADE /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		18F43F5D29C38DFF00D071D5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		18F43F5F29C3945900D071D5 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		18F43F6029C3945900D071D5 /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
+		18F43F6329C3948A00D071D5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		18F43F6429C3948A00D071D5 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		18F43F6729C4902200D071D5 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		18F43F6829C4902200D071D5 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +199,13 @@
 				18F1A59329BCED4500A69ADE /* SignInViewController.xib */,
 				18F1A59729BCF82000A69ADE /* SignUpViewController.xib */,
 				18F1A59B29BE00FE00A69ADE /* ProfileViewController.xib */,
+				187728AD29C0C57B003C3483 /* SetFiltersVC.xib */,
+				187728B429C0CABF003C3483 /* ApplyVC.xib */,
+				187728BE29C2F7A5003C3483 /* FormViewController.xib */,
+				1860258529C33E6900E67161 /* MessageViewController.xib */,
+				18F43F6029C3945900D071D5 /* EditProfileViewController.xib */,
+				18F43F6429C3948A00D071D5 /* SettingsViewController.xib */,
+				18F43F6829C4902200D071D5 /* ChatViewController.xib */,
 			);
 			path = ControllersXibs;
 			sourceTree = "<group>";
@@ -198,7 +235,13 @@
 				18F1A59229BCED4500A69ADE /* SignInViewController.swift */,
 				18F1A59A29BE00FE00A69ADE /* ProfileViewController.swift */,
 				1825219429C04022009FFE26 /* SetFiltersVC.swift */,
-				1825219529C04022009FFE26 /* SetFiltersVC.xib */,
+				187728B329C0CABF003C3483 /* ApplyVC.swift */,
+				1860258429C33E6900E67161 /* MessageViewController.swift */,
+				187728BD29C2F7A5003C3483 /* FormViewController.swift */,
+				18F43F5D29C38DFF00D071D5 /* TabBarViewController.swift */,
+				18F43F5F29C3945900D071D5 /* EditProfileViewController.swift */,
+				18F43F6329C3948A00D071D5 /* SettingsViewController.swift */,
+				18F43F6729C4902200D071D5 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,20 +249,38 @@
 		184C014229BC937C002F9A3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				184C013A29BC4D72002F9A3E /* CollectionReusableClass.swift */,
-				18D0EAF229BE165E0009FEF9 /* New Group */,
-				185DE5B929BEE91F00DF8406 /* ConfigureColllectionView.swift */,
+				1860258929C34DE000E67161 /* TableviewCells */,
+				1860258829C34DBB00E67161 /* Others */,
+				18D0EAF229BE165E0009FEF9 /* CollectionViewcells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		18D0EAF229BE165E0009FEF9 /* New Group */ = {
+		1860258829C34DBB00E67161 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				185DE5B929BEE91F00DF8406 /* ConfigureColllectionView.swift */,
+				184C013A29BC4D72002F9A3E /* CollectionReusableClass.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		1860258929C34DE000E67161 /* TableviewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1860258A29C34E1E00E67161 /* MessageTableViewCell.swift */,
+			);
+			path = TableviewCells;
+			sourceTree = "<group>";
+		};
+		18D0EAF229BE165E0009FEF9 /* CollectionViewcells */ = {
+			isa = PBXGroup;
+			children = (
+				187728B729C0E7C9003C3483 /* JobApplyCollectionCell.swift */,
 				185DE5AD29BE1AC600DF8406 /* ProfileHorizontalCVC.swift */,
 				185DE5BB29BEE99700DF8406 /* VerticalCollectionViewCell.swift */,
 			);
-			path = "New Group";
+			path = CollectionViewcells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +343,12 @@
 			files = (
 				18F1A59129BCD79000A69ADE /* LaunchViewController.xib in Resources */,
 				184C013029BB8898002F9A3E /* Poppins-Thin.ttf in Resources */,
+				18F43F6229C3945900D071D5 /* EditProfileViewController.xib in Resources */,
 				184C013329BB8898002F9A3E /* Poppins-MediumItalic.ttf in Resources */,
-				1825219729C04022009FFE26 /* SetFiltersVC.xib in Resources */,
+				187728AE29C0C57B003C3483 /* SetFiltersVC.xib in Resources */,
 				184C012B29BB8898002F9A3E /* OFL.txt in Resources */,
+				18F43F6A29C4902200D071D5 /* ChatViewController.xib in Resources */,
+				187728B629C0CABF003C3483 /* ApplyVC.xib in Resources */,
 				184C012329BB8898002F9A3E /* Poppins-ExtraLightItalic.ttf in Resources */,
 				184C012A29BB8898002F9A3E /* Poppins-BlackItalic.ttf in Resources */,
 				184C012129BB8898002F9A3E /* Poppins-ExtraLight.ttf in Resources */,
@@ -293,6 +357,7 @@
 				184C012529BB8898002F9A3E /* Poppins-Light.ttf in Resources */,
 				184C012F29BB8898002F9A3E /* Poppins-Black.ttf in Resources */,
 				184C013229BB8898002F9A3E /* Poppins-Italic.ttf in Resources */,
+				187728C029C2F7A5003C3483 /* FormViewController.xib in Resources */,
 				184C012929BB8898002F9A3E /* Poppins-ExtraBold.ttf in Resources */,
 				184C012D29BB8898002F9A3E /* Poppins-LightItalic.ttf in Resources */,
 				18F1A59929BCF82000A69ADE /* SignUpViewController.xib in Resources */,
@@ -300,7 +365,9 @@
 				184C010629BB7FCB002F9A3E /* LaunchScreen.storyboard in Resources */,
 				18F1A59529BCED4500A69ADE /* SignInViewController.xib in Resources */,
 				184C012729BB8898002F9A3E /* Poppins-SemiBoldItalic.ttf in Resources */,
+				1860258729C33E6900E67161 /* MessageViewController.xib in Resources */,
 				184C012C29BB8898002F9A3E /* Poppins-Regular.ttf in Resources */,
+				18F43F6629C3948A00D071D5 /* SettingsViewController.xib in Resources */,
 				184C012829BB8898002F9A3E /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				184C012E29BB8898002F9A3E /* Poppins-Bold.ttf in Resources */,
 				184C012229BB8898002F9A3E /* Poppins-ThinItalic.ttf in Resources */,
@@ -317,18 +384,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F1A59429BCED4500A69ADE /* SignInViewController.swift in Sources */,
+				187728B529C0CABF003C3483 /* ApplyVC.swift in Sources */,
+				18F43F6929C4902200D071D5 /* ChatViewController.swift in Sources */,
+				18F43F6529C3948A00D071D5 /* SettingsViewController.swift in Sources */,
 				185DE5AF29BE1AC600DF8406 /* ProfileHorizontalCVC.swift in Sources */,
 				185DE5BA29BEE91F00DF8406 /* ConfigureColllectionView.swift in Sources */,
 				18F1A59029BCD79000A69ADE /* LaunchViewController.swift in Sources */,
 				184C00FE29BB7FC9002F9A3E /* ViewController.swift in Sources */,
+				187728BF29C2F7A5003C3483 /* FormViewController.swift in Sources */,
 				184C013B29BC4D72002F9A3E /* CollectionReusableClass.swift in Sources */,
+				18F43F6129C3945900D071D5 /* EditProfileViewController.swift in Sources */,
 				184C013729BC3F8D002F9A3E /* Sizes.swift in Sources */,
 				18F1A59C29BE00FE00A69ADE /* ProfileViewController.swift in Sources */,
 				18F1A59829BCF82000A69ADE /* SignUpViewController.swift in Sources */,
+				1860258B29C34E1E00E67161 /* MessageTableViewCell.swift in Sources */,
 				185DE5BC29BEE99700DF8406 /* VerticalCollectionViewCell.swift in Sources */,
+				18F43F5E29C38DFF00D071D5 /* TabBarViewController.swift in Sources */,
 				1825219629C04022009FFE26 /* SetFiltersVC.swift in Sources */,
+				1860258629C33E6900E67161 /* MessageViewController.swift in Sources */,
 				184C00FA29BB7FC9002F9A3E /* AppDelegate.swift in Sources */,
 				184C00FC29BB7FC9002F9A3E /* SceneDelegate.swift in Sources */,
+				187728B929C0E7C9003C3483 /* JobApplyCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

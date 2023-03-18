@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zP-KY-4oe">
-                    <rect key="frame" x="16" y="75" width="44" height="44"/>
+                    <rect key="frame" x="16" y="55" width="44" height="44"/>
                     <color key="backgroundColor" red="0.16078431369999999" green="0.066666666669999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="RgP-wt-Z6j"/>
@@ -42,7 +41,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ismoilxolmatoviosdev-gmail-com_profile_picture (1)" translatesAutoresizingMaskIntoConstraints="NO" id="BZs-qF-jlW">
-                    <rect key="frame" x="333" y="75" width="44" height="44"/>
+                    <rect key="frame" x="333" y="55" width="44" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="Kdy-G5-sLD"/>
                         <constraint firstAttribute="width" constant="44" id="gn9-uO-PJQ"/>
@@ -54,7 +53,7 @@
                     </userDefinedRuntimeAttributes>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuJ-tH-fv6">
-                    <rect key="frame" x="16" y="139" width="361" height="55"/>
+                    <rect key="frame" x="16" y="119" width="361" height="55"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ib-8a-Lr8">
                             <rect key="frame" x="306" y="0.0" width="55" height="55"/>
@@ -103,7 +102,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Z2-s2-LAr">
-                    <rect key="frame" x="0.0" y="224" width="393" height="220"/>
+                    <rect key="frame" x="0.0" y="204" width="393" height="220"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Job" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFo-4g-FUL">
                             <rect key="frame" x="20.000000000000007" y="0.0" width="121.66666666666669" height="28"/>
@@ -147,7 +146,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAU-9R-S01">
-                    <rect key="frame" x="16" y="464" width="361" height="304"/>
+                    <rect key="frame" x="16" y="444" width="361" height="392"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hw-c3-qp3">
                             <rect key="frame" x="0.0" y="0.0" width="119" height="28"/>
@@ -167,7 +166,7 @@
                             </buttonConfiguration>
                         </button>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mI1-jt-ikD">
-                            <rect key="frame" x="0.0" y="48" width="361" height="256"/>
+                            <rect key="frame" x="0.0" y="48" width="361" height="344"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9z2-Te-rT7">
                                 <size key="itemSize" width="361" height="80"/>
@@ -183,54 +182,29 @@
                         <constraint firstItem="mI1-jt-ikD" firstAttribute="top" secondItem="3Hw-c3-qp3" secondAttribute="bottom" constant="20" id="A3s-xC-MNb"/>
                         <constraint firstItem="3Hw-c3-qp3" firstAttribute="top" secondItem="rAU-9R-S01" secondAttribute="top" id="EaG-RZ-c8k"/>
                         <constraint firstItem="bQW-Cs-2Xc" firstAttribute="centerY" secondItem="3Hw-c3-qp3" secondAttribute="centerY" id="Nge-I6-iGC"/>
-                        <constraint firstAttribute="bottom" secondItem="mI1-jt-ikD" secondAttribute="bottom" id="bHT-Hk-J2V"/>
+                        <constraint firstAttribute="bottom" secondItem="mI1-jt-ikD" secondAttribute="bottom" id="eLJ-TD-Clv"/>
                         <constraint firstAttribute="trailing" secondItem="mI1-jt-ikD" secondAttribute="trailing" id="nsh-Za-MyL"/>
                         <constraint firstItem="mI1-jt-ikD" firstAttribute="leading" secondItem="rAU-9R-S01" secondAttribute="leading" id="oVc-wJ-TPa"/>
                         <constraint firstAttribute="trailing" secondItem="bQW-Cs-2Xc" secondAttribute="trailing" constant="16" id="yKH-Zd-658"/>
                     </constraints>
                 </view>
-                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rky-Ox-5Ru">
-                    <rect key="frame" x="0.0" y="768" width="393" height="50"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="FbQ-PX-uUz"/>
-                    </constraints>
-                    <items>
-                        <tabBarItem title="Home" image="house.fill" catalog="system" id="2bl-9e-5tb"/>
-                        <tabBarItem title="Message" image="message.fill" catalog="system" id="k6K-DV-2yj"/>
-                        <tabBarItem title="Profile" image="person.fill" catalog="system" id="uAf-bl-N0L"/>
-                        <tabBarItem title="Settings" image="gearshape.fill" catalog="system" id="w9N-h9-Be4"/>
-                    </items>
-                    <color key="tintColor" systemColor="labelColor"/>
-                    <color key="selectedImageTintColor" systemColor="labelColor"/>
-                    <tabBarAppearance key="standardAppearance"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                            <integer key="value" value="30"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </tabBar>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemGray6Color"/>
             <constraints>
-                <constraint firstItem="8zP-KY-4oe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="D1u-vE-n2p"/>
-                <constraint firstItem="0Z2-s2-LAr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H7H-hL-3vt"/>
+                <constraint firstItem="8zP-KY-4oe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="D1u-vE-n2p"/>
+                <constraint firstItem="0Z2-s2-LAr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H7H-hL-3vt"/>
                 <constraint firstItem="AuJ-tH-fv6" firstAttribute="leading" secondItem="rAU-9R-S01" secondAttribute="leading" id="HyY-gm-1zK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BZs-qF-jlW" secondAttribute="trailing" constant="16" id="KMF-zr-wUJ"/>
-                <constraint firstItem="Rky-Ox-5Ru" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NJL-an-KhN"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Z2-s2-LAr" secondAttribute="trailing" id="Orh-Ha-8N0"/>
-                <constraint firstItem="Rky-Ox-5Ru" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="XuK-71-8uW"/>
+                <constraint firstAttribute="trailing" secondItem="BZs-qF-jlW" secondAttribute="trailing" constant="16" id="KMF-zr-wUJ"/>
+                <constraint firstItem="BZs-qF-jlW" firstAttribute="centerY" secondItem="8zP-KY-4oe" secondAttribute="centerY" id="N0G-uy-Dvg"/>
+                <constraint firstAttribute="bottom" secondItem="rAU-9R-S01" secondAttribute="bottom" constant="16" id="NPH-4F-Sie"/>
+                <constraint firstAttribute="trailing" secondItem="0Z2-s2-LAr" secondAttribute="trailing" id="Orh-Ha-8N0"/>
                 <constraint firstItem="0Z2-s2-LAr" firstAttribute="top" secondItem="AuJ-tH-fv6" secondAttribute="bottom" constant="30" id="a6Q-fD-Wvc"/>
                 <constraint firstItem="AuJ-tH-fv6" firstAttribute="top" secondItem="8zP-KY-4oe" secondAttribute="bottom" constant="20" id="aTW-NP-dqr"/>
-                <constraint firstItem="8zP-KY-4oe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="b7Y-VK-XoA"/>
-                <constraint firstItem="BZs-qF-jlW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="diq-jA-F8p"/>
+                <constraint firstItem="8zP-KY-4oe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="b7Y-VK-XoA"/>
                 <constraint firstItem="AuJ-tH-fv6" firstAttribute="trailing" secondItem="BZs-qF-jlW" secondAttribute="trailing" id="eHZ-K5-wKs"/>
                 <constraint firstItem="AuJ-tH-fv6" firstAttribute="leading" secondItem="8zP-KY-4oe" secondAttribute="leading" id="k7k-xg-0rb"/>
                 <constraint firstItem="rAU-9R-S01" firstAttribute="top" secondItem="0Z2-s2-LAr" secondAttribute="bottom" constant="20" id="qxz-iU-uc4"/>
                 <constraint firstItem="4Ib-8a-Lr8" firstAttribute="trailing" secondItem="rAU-9R-S01" secondAttribute="trailing" id="rAP-x4-zxt"/>
-                <constraint firstItem="Rky-Ox-5Ru" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="t0E-wO-a74"/>
-                <constraint firstItem="Rky-Ox-5Ru" firstAttribute="top" secondItem="rAU-9R-S01" secondAttribute="bottom" id="zOx-Bm-6aS"/>
             </constraints>
             <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
         </view>
@@ -238,14 +212,7 @@
     <resources>
         <image name="Vector" width="18" height="14"/>
         <image name="adjust-horizontal-alt" width="20" height="20"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
-        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="ismoilxolmatoviosdev-gmail-com_profile_picture (1)" width="200" height="200"/>
-        <image name="message.fill" catalog="system" width="128" height="114"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
