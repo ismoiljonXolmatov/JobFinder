@@ -10,6 +10,14 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     
+    @IBOutlet var menuBar: UIButton!
+    
+    @IBAction func MenuBarButton(_ sender: Any) {
+        let vc = MenuViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func didTapJob() {
         let vc = ApplyVC()
         navigationController?.pushViewController(vc, animated: true)
@@ -20,9 +28,9 @@ class ProfileViewController: UIViewController {
     @IBAction func tapFilterButton(_ sender: Any) {
         let vc = SetFiltersVC()
         vc.title = "Set Filters"
-        present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
        }
-      
+    
     @IBOutlet var collectionView: UICollectionView!
     
      private let viewModel = ConfigureColllectionView()
@@ -35,7 +43,6 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-//        viewModel.delegate = self
         verticalCollectionView.dataSource = viewModel
         verticalCollectionView.delegate = viewModel
         collectionView.register(ProfileHorizontalCVC.self, forCellWithReuseIdentifier: ProfileHorizontalCVC.identifier)
@@ -61,6 +68,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProfileHorizontalCVC.identifier, for: indexPath) as? ProfileHorizontalCVC else {
             return UICollectionViewCell()
         }
+        
         if indexPath.row == 0 {
             cell.imageView.image = UIImage(named: "google 1")
             cell.jobLabel.text = "Lead Product Manager"

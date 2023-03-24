@@ -21,7 +21,8 @@ class SignInViewController: UIViewController {
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
         vc.modalTransitionStyle = .partialCurl
-        present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
     
 
@@ -32,8 +33,7 @@ class SignInViewController: UIViewController {
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
         vc.modalTransitionStyle = .partialCurl
-        present(vc, animated: true)
-  
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

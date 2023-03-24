@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="Job_Finder1" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IrU-eV-RcZ" customClass="MyView" customModule="Job_Finder1" customModuleProvider="target">
+                    <rect key="frame" x="77" y="749" width="300" height="54"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DA4-Kl-iFT">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNj-QR-Q1o">
+                            <rect key="frame" x="239.33333333333329" y="10" width="50.666666666666657" height="34.333333333333336"/>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="paperplane" catalog="system"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="DA4-Kl-iFT" firstAttribute="leading" secondItem="IrU-eV-RcZ" secondAttribute="leading" id="8zh-3y-NCQ"/>
+                        <constraint firstAttribute="trailing" secondItem="DA4-Kl-iFT" secondAttribute="trailing" id="9Pb-aH-FBT"/>
+                        <constraint firstItem="DA4-Kl-iFT" firstAttribute="top" secondItem="IrU-eV-RcZ" secondAttribute="top" id="IoX-xd-9YD"/>
+                        <constraint firstAttribute="height" constant="54" id="ckh-fj-dEn"/>
+                        <constraint firstAttribute="bottom" secondItem="DA4-Kl-iFT" secondAttribute="bottom" id="eUb-xJ-IF5"/>
+                        <constraint firstItem="oNj-QR-Q1o" firstAttribute="centerY" secondItem="DA4-Kl-iFT" secondAttribute="centerY" id="g7I-av-2gn"/>
+                        <constraint firstAttribute="trailing" secondItem="oNj-QR-Q1o" secondAttribute="trailing" constant="10" id="ycu-wA-FlW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNp-ph-dLM" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
+                    <rect key="frame" x="16" y="753" width="46" height="46"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.066666666669999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="dfn-J8-1ge"/>
+                        <constraint firstAttribute="width" constant="46" id="iRl-5N-t4p"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="plus" catalog="system"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="23"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="qkE-T1-YAQ"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="wNp-ph-dLM" firstAttribute="leading" secondItem="qkE-T1-YAQ" secondAttribute="leading" constant="16" id="3Dq-WL-ZsE"/>
+                <constraint firstItem="IrU-eV-RcZ" firstAttribute="bottom" secondItem="qkE-T1-YAQ" secondAttribute="bottom" constant="-15" id="cH7-HV-pOC"/>
+                <constraint firstItem="IrU-eV-RcZ" firstAttribute="leading" secondItem="wNp-ph-dLM" secondAttribute="trailing" constant="15" id="ejI-Tl-oBw"/>
+                <constraint firstItem="qkE-T1-YAQ" firstAttribute="trailing" secondItem="IrU-eV-RcZ" secondAttribute="trailing" constant="16" id="nHN-rI-Nnm"/>
+                <constraint firstItem="wNp-ph-dLM" firstAttribute="centerY" secondItem="IrU-eV-RcZ" secondAttribute="centerY" id="npb-Yz-Eke"/>
+            </constraints>
+            <point key="canvasLocation" x="-163" y="-10"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="wNp-ph-dLM">
+            <size key="intrinsicContentSize" width="18" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="paperplane" catalog="system" width="128" height="119"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

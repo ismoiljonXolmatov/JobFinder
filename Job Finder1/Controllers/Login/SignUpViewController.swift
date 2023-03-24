@@ -16,21 +16,19 @@ class SignUpViewController: UIViewController {
         let vc = SignInViewController()
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .partialCurl
-        present(vc, animated: true)
- 
+        self.navigationController?.pushViewController(vc, animated: true)
       }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
       }
     
     @IBAction func signUpButton(_ sender: Any) {
         let vc = ProfileViewController()
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .partialCurl
-        present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
@@ -38,9 +36,8 @@ class SignUpViewController: UIViewController {
         let vc = SignInViewController()
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .partialCurl
         vc.title = "SignIn"
-        present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     }

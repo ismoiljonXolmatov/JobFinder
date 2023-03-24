@@ -24,12 +24,26 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         navigationItem.rightBarButtonItem?.tintColor = .label
         self.navigationController?.isNavigationBarHidden = true
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.setNavigationBarHidden(false, animated: false)
-//        view.addSubview(nameLabell)
         view.addSubview(topImageView)
         addConstraints()
+        let button1 = UIBarButtonItem(image: UIImage(named: "Group"), style: .plain, target: self, action: #selector(didTapCancel))
+        self.navigationItem.leftBarButtonItem  = button1
+        let button2 = UIBarButtonItem(image: UIImage(named: "phonecall"), style: .plain, target: self, action: #selector(didTapSearch))
+        self.navigationItem.rightBarButtonItem  = button2
+        navigationItem.largeTitleDisplayMode = .never
+
+    }
+    @objc func didTapCancel() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func didTapSearch() {
+        let vc = SearchViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,10 +65,6 @@ class ChatViewController: UIViewController {
             topImageView.heightAnchor.constraint(equalToConstant: 35),
             topImageView.widthAnchor.constraint(equalToConstant: 35),
             
-//            nameLabell.leadingAnchor.constraint(equalTo: topImageView.trailingAnchor, constant: 15),
-//            nameLabell.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-//            nameLabell.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -143),
-
         ])
     }
     

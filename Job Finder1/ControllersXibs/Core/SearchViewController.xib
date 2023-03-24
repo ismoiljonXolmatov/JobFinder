@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Job_Finder1" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTn-kR-HdS" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
+                    <rect key="frame" x="319" y="109" width="54" height="54"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.066666666669999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="MKB-qV-dhp"/>
+                        <constraint firstAttribute="height" constant="54" id="Y5L-Ja-8hp"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="adjust-horizontal-alt"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcA-Bw-fcI" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
+                    <rect key="frame" x="20" y="217.66666666666666" width="139" height="53.999999999999972"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.066666666669999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="hyn-cq-p60"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Most Relevent"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35 Job Opportunity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kph-8f-iI0">
+                    <rect key="frame" x="20" y="181" width="153.33333333333334" height="22.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAe-hs-NYA" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
+                    <rect key="frame" x="174" y="217.66666666666666" width="127" height="53.999999999999972"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="VtS-cX-GvB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                    <color key="tintColor" systemColor="systemGrayColor"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Most Recent">
+                        <color key="titleColor" systemColor="systemGrayColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UI Design" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgA-dX-v7h">
+                    <rect key="frame" x="20" y="109" width="284" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="Zso-SU-VbO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="EQm-RC-Cz2"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fgA-dX-v7h" firstAttribute="top" secondItem="EQm-RC-Cz2" secondAttribute="top" constant="50" id="0jF-vu-eRd"/>
+                <constraint firstItem="kph-8f-iI0" firstAttribute="leading" secondItem="fgA-dX-v7h" secondAttribute="leading" id="9wl-EX-2lY"/>
+                <constraint firstAttribute="trailing" secondItem="oTn-kR-HdS" secondAttribute="trailing" constant="20" id="B6I-be-xFd"/>
+                <constraint firstAttribute="trailing" secondItem="fgA-dX-v7h" secondAttribute="trailing" constant="89" id="HJX-KV-Mfy"/>
+                <constraint firstItem="RAe-hs-NYA" firstAttribute="leading" secondItem="RcA-Bw-fcI" secondAttribute="trailing" constant="15" id="HdB-zd-qpB"/>
+                <constraint firstItem="fgA-dX-v7h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Me2-3D-Frd"/>
+                <constraint firstItem="oTn-kR-HdS" firstAttribute="leading" secondItem="fgA-dX-v7h" secondAttribute="trailing" constant="15" id="ZVR-SW-QZt"/>
+                <constraint firstItem="oTn-kR-HdS" firstAttribute="centerY" secondItem="fgA-dX-v7h" secondAttribute="centerY" id="efk-1H-T2g"/>
+                <constraint firstItem="kph-8f-iI0" firstAttribute="top" secondItem="fgA-dX-v7h" secondAttribute="bottom" constant="18" id="m4B-0j-dPo"/>
+                <constraint firstItem="RcA-Bw-fcI" firstAttribute="top" secondItem="kph-8f-iI0" secondAttribute="bottom" constant="14" id="qdj-Tv-ZaG"/>
+                <constraint firstItem="RcA-Bw-fcI" firstAttribute="leading" secondItem="kph-8f-iI0" secondAttribute="leading" id="vhO-MK-5Jl"/>
+                <constraint firstItem="RAe-hs-NYA" firstAttribute="top" secondItem="RcA-Bw-fcI" secondAttribute="top" id="vtN-ls-BLv"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="-106"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="RAe-hs-NYA">
+            <size key="intrinsicContentSize" width="127" height="20"/>
+        </designable>
+        <designable name="RcA-Bw-fcI">
+            <size key="intrinsicContentSize" width="139" height="20"/>
+        </designable>
+        <designable name="oTn-kR-HdS">
+            <size key="intrinsicContentSize" width="44" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="adjust-horizontal-alt" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

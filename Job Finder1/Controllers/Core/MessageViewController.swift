@@ -19,7 +19,6 @@ class MessageViewController: UIViewController {
         )
     }
     
-    
     let names: [String] = ["Rozanne Barrientes","Anaya Sanji","Elizabeth Olsen","Tony Stark","Banner","Steave","Thor","Natasha","Hak Eye"]
     
     let messages: [String] = ["A wonderful serenity has taken...","AWhat about Paypal?","We shoud move forword to talk with....","Let’s have a call for a future projects...","I don’t think i can fit on this ui we should....","Move in some special work recently so.....","You shoud be a avenger i thing the.....","I am going to die in avengers endgame.....","I have to save natasha in endgame....."]
@@ -59,7 +58,6 @@ class MessageViewController: UIViewController {
         messageTableView.dataSource = self
         messageTableView.register(MessageTableViewCell.self, forCellReuseIdentifier: MessageTableViewCell.identifier)
     }
-  
 }
 
 extension MessageViewController: UITableViewDataSource, UITableViewDelegate {
@@ -104,7 +102,6 @@ extension MessageViewController: UITableViewDataSource, UITableViewDelegate {
         let vc = ChatViewController()
         vc.modalPresentationStyle = .fullScreen
         vc.topImageView.image = profileimages[indexPath.row]
-//        vc.nameLabell.text = names[indexPath.row]
         vc.title = names[indexPath.row]
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.navigationBar.topItem?.backButtonTitle = ""

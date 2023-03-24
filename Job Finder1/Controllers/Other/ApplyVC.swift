@@ -11,36 +11,35 @@ class ApplyVC: UIViewController {
     
     @IBOutlet var myCollectionView: UICollectionView!
     
-//    var color1 = hexStringToUIColor("#291150")
-    
     
     @IBAction func backButton(_ sender: Any) {
         let vc = ProfileViewController()
         vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func applyButton(_ sender: Any) {
-        
         let vc = FormViewController()
-        vc.modalTransitionStyle = .partialCurl
         vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.tintColor = .systemGray6
+        navigationController?.navigationBar.tintColor = .label
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
         myCollectionView.register(JobApplyCollectionCell.self, forCellWithReuseIdentifier: JobApplyCollectionCell.identifier)
-    }
+        let button1 = UIBarButtonItem(image: UIImage(named: "Group"), style: .plain, target: self, action: #selector(didTapCancel))
+        self.navigationItem.leftBarButtonItem  = button1
+        title = "Job Apply"
+        navigationItem.largeTitleDisplayMode = .never
 
     }
+    @objc func didTapCancel() {
+        self.navigationController?.popViewController(animated: true)
+    }
+}
 
 @IBDesignable class myImageView: UIButton{}
 extension myImageView {
