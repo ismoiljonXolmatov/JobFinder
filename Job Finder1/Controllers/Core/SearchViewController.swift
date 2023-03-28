@@ -19,12 +19,15 @@ class SearchViewController: UIViewController {
    }
     
     let companies: [String] = ["Facebook","Dribbble","Google","Shopify","Netflix"]
+    
     let saleries: [String] = ["$4500/m","$6000/m","$4500/m","$1200/m","$1200/m"]
+    
     let locations: [String] = ["Toronto, Canada","Toronto, Canada","New York, USA","New York, USA","South Korea, Seul"]
+    
     let workTimes: [String] = ["06h","12h","24h", "24h","16h"]
+    
     let jobTypes: [String] = ["UI/UX Designer","Product Designer","Senior Ux Designer","Visual Designer","Visual Designer"]
 
-    
     var companyIcons: [UIImage?] = [
         UIImage(named: "Facebook"),
         UIImage(named: "Dribble"),
@@ -32,6 +35,7 @@ class SearchViewController: UIViewController {
         UIImage(named: "spotify"),
         UIImage(named: "netflix")
     ]
+    
     let bacgroundColors: [UIColor] = [
         UIColorFromRGBSearch(rgbValue: 0x1445B4),
         UIColorFromRGBSearch(rgbValue: 0xFFD4E5),
@@ -45,13 +49,10 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = SearchViewController.UIColorFromRGBSearch(rgbValue: 0xD7D7D7)
-        self.tabBarController?.tabBar.isHidden = true
         view.backgroundColor = .systemGray6
         collectionView.register(searchcollectionviewCell.self, forCellWithReuseIdentifier: searchcollectionviewCell.identifier)
         title = "Search"
         navigationItem.largeTitleDisplayMode = .never
-        let button = UIBarButtonItem(image: UIImage(named: "Group"), style: .plain, target: self, action: #selector(didtabBack))
-        navigationItem.leftBarButtonItem = button
         view.addSubview(collectionView)
         addConstraints()
     }

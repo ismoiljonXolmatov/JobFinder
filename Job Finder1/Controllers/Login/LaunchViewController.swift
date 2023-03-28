@@ -19,10 +19,7 @@ class LaunchViewController: UIViewController {
         vc.title = "Sign in"
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .partialCurl
-        self.navigationController?.pushViewController(vc, animated: true)
-
-        
+        present(vc, animated: true)
     }
     
 }

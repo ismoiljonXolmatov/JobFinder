@@ -41,8 +41,13 @@ class ProfileViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = ""
+        navigationItem.largeTitleDisplayMode = .never
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
+
         verticalCollectionView.dataSource = viewModel
         verticalCollectionView.delegate = viewModel
         collectionView.register(ProfileHorizontalCVC.self, forCellWithReuseIdentifier: ProfileHorizontalCVC.identifier)

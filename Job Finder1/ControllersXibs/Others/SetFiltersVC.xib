@@ -35,14 +35,17 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UI/UX Design" borderStyle="roundedRect" placeholder=" " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cj5-HQ-t4i">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UI/UX Design" borderStyle="roundedRect" placeholder=" " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cj5-HQ-t4i" customClass="myTextfield" customModule="Job_Finder1" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="37.666666666666657" width="353" height="49.333333333333343"/>
                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
@@ -74,14 +77,17 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Graphics Design" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-fO-wZs">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Graphics Design" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-fO-wZs" customClass="myTextfield" customModule="Job_Finder1" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="37.666666666666686" width="353" height="49.333333333333343"/>
                             <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
@@ -111,94 +117,78 @@
                             <rect key="frame" x="0.0" y="0.0" width="170" height="87"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qn-Bc-b38">
-                                    <rect key="frame" x="0.0" y="0.0" width="68" height="23"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="68" height="22.666666666666668"/>
                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="             Canada" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iP5-R2-edj">
-                                    <rect key="frame" x="0.0" y="38" width="170" height="49"/>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Canada" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iP5-R2-edj" customClass="DesignableUITextField" customModule="Job_Finder1" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="37.666666666666686" width="170" height="49.333333333333343"/>
                                     <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                             <integer key="value" value="12"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Location"/>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR4-ae-McT">
-                                    <rect key="frame" x="132" y="52" width="18" height="22"/>
+                                    <rect key="frame" x="142" y="52" width="18" height="22"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="down-small"/>
                                 </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="SeQ-7X-d5G">
-                                    <rect key="frame" x="20" y="52" width="20" height="20"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="20" id="7YX-UQ-Mqm"/>
-                                        <constraint firstAttribute="height" constant="20" id="cSQ-2X-W04"/>
-                                    </constraints>
-                                </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <constraints>
-                                <constraint firstItem="SeQ-7X-d5G" firstAttribute="leading" secondItem="Iue-Ko-a49" secondAttribute="leading" constant="20" id="0ky-S4-e4V"/>
                                 <constraint firstItem="iP5-R2-edj" firstAttribute="top" secondItem="9Qn-Bc-b38" secondAttribute="bottom" constant="15" id="GhN-eJ-40B"/>
                                 <constraint firstItem="iP5-R2-edj" firstAttribute="leading" secondItem="Iue-Ko-a49" secondAttribute="leading" id="PI9-4e-0Up"/>
                                 <constraint firstItem="9Qn-Bc-b38" firstAttribute="top" secondItem="Iue-Ko-a49" secondAttribute="top" id="VkM-9x-rb9"/>
                                 <constraint firstAttribute="bottom" secondItem="JR4-ae-McT" secondAttribute="bottom" constant="13" id="aRi-Sb-Xxg"/>
                                 <constraint firstAttribute="trailing" secondItem="iP5-R2-edj" secondAttribute="trailing" id="ba1-sB-b3g"/>
                                 <constraint firstAttribute="width" constant="170" id="csE-o6-Ykc"/>
-                                <constraint firstAttribute="bottom" secondItem="SeQ-7X-d5G" secondAttribute="bottom" constant="15" id="gWt-Wf-lhM"/>
                                 <constraint firstItem="9Qn-Bc-b38" firstAttribute="leading" secondItem="Iue-Ko-a49" secondAttribute="leading" id="rCJ-FK-QAV"/>
                                 <constraint firstAttribute="bottom" secondItem="iP5-R2-edj" secondAttribute="bottom" id="ysG-ZP-234"/>
-                                <constraint firstAttribute="trailing" secondItem="JR4-ae-McT" secondAttribute="trailing" constant="20" id="yuQ-m4-G0o"/>
+                                <constraint firstAttribute="trailing" secondItem="JR4-ae-McT" secondAttribute="trailing" constant="10" id="yuQ-m4-G0o"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpT-Es-kWZ">
                             <rect key="frame" x="183" y="0.0" width="170" height="87"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epv-DD-Rt5">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="23"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="22.666666666666668"/>
                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="            $2k-$5k" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-Sk-M6z">
-                                    <rect key="frame" x="0.0" y="38" width="170" height="49"/>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$2k-$5k" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-Sk-M6z" customClass="DesignableUITextField" customModule="Job_Finder1" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="37.666666666666686" width="170" height="49.333333333333343"/>
                                     <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                             <integer key="value" value="12"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Wallet"/>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbW-fL-InD">
-                                    <rect key="frame" x="132" y="52" width="18" height="22"/>
+                                    <rect key="frame" x="142" y="52" width="18" height="22"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="down-small"/>
                                 </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallet" translatesAutoresizingMaskIntoConstraints="NO" id="Lgv-Yo-zIR">
-                                    <rect key="frame" x="20" y="52.666666666666686" width="20" height="20"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="20" id="Sic-uq-HhD"/>
-                                        <constraint firstAttribute="height" constant="20" id="Tef-Hf-jUB"/>
-                                    </constraints>
-                                </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <constraints>
                                 <constraint firstItem="epv-DD-Rt5" firstAttribute="top" secondItem="gpT-Es-kWZ" secondAttribute="top" id="2Zn-bZ-EbP"/>
                                 <constraint firstAttribute="bottom" secondItem="MbW-fL-InD" secondAttribute="bottom" constant="13" id="8WL-jV-t2H"/>
                                 <constraint firstAttribute="width" constant="170" id="ICd-Os-3nc"/>
-                                <constraint firstItem="Lgv-Yo-zIR" firstAttribute="centerY" secondItem="GDJ-Sk-M6z" secondAttribute="centerY" id="JIx-mI-sWg"/>
                                 <constraint firstAttribute="bottom" secondItem="GDJ-Sk-M6z" secondAttribute="bottom" id="Qtv-D9-CTN"/>
                                 <constraint firstItem="GDJ-Sk-M6z" firstAttribute="leading" secondItem="gpT-Es-kWZ" secondAttribute="leading" id="ePw-vs-xyn"/>
                                 <constraint firstItem="epv-DD-Rt5" firstAttribute="leading" secondItem="gpT-Es-kWZ" secondAttribute="leading" id="ffy-uO-9gL"/>
-                                <constraint firstAttribute="trailing" secondItem="MbW-fL-InD" secondAttribute="trailing" constant="20" id="gvu-O8-d2m"/>
-                                <constraint firstItem="Lgv-Yo-zIR" firstAttribute="leading" secondItem="gpT-Es-kWZ" secondAttribute="leading" constant="20" id="mMg-Dl-sB4"/>
+                                <constraint firstAttribute="trailing" secondItem="MbW-fL-InD" secondAttribute="trailing" constant="10" id="gvu-O8-d2m"/>
                                 <constraint firstAttribute="trailing" secondItem="GDJ-Sk-M6z" secondAttribute="trailing" id="rW6-Xs-5Fd"/>
                                 <constraint firstItem="GDJ-Sk-M6z" firstAttribute="top" secondItem="epv-DD-Rt5" secondAttribute="bottom" constant="15" id="vwx-pI-Sys"/>
                             </constraints>
@@ -219,13 +209,13 @@
                     <rect key="frame" x="20" y="510" width="353" height="138"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsW-KI-gQ2">
-                            <rect key="frame" x="0.0" y="0.0" width="72.333333333333329" height="23"/>
+                            <rect key="frame" x="0.0" y="0.0" width="72.333333333333329" height="22.666666666666668"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipsis" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bVm-SI-Gq6">
-                            <rect key="frame" x="333" y="9.3333333333333517" width="20" height="4.9999999999999982"/>
+                            <rect key="frame" x="333" y="8.9999999999999805" width="20" height="4.9999999999999982"/>
                             <color key="tintColor" systemColor="labelColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="1Tg-jb-O58"/>
@@ -233,7 +223,7 @@
                             </constraints>
                         </imageView>
                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-rp-ly6" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
-                            <rect key="frame" x="116" y="43" width="106" height="40"/>
+                            <rect key="frame" x="116" y="42.666666666666629" width="106" height="40"/>
                             <color key="backgroundColor" red="0.16078431369999999" green="0.066666666669999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                             <color key="tintColor" systemColor="labelColor"/>
@@ -268,7 +258,7 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5z-yk-eyX" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
-                            <rect key="frame" x="237" y="43" width="103" height="40"/>
+                            <rect key="frame" x="237" y="42.666666666666629" width="103" height="40"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                             <color key="tintColor" systemColor="labelColor"/>
@@ -303,7 +293,7 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDg-uz-NXe" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="43" width="101" height="40"/>
+                            <rect key="frame" x="0.0" y="42.666666666666629" width="101" height="40"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                             <color key="tintColor" systemColor="labelColor"/>
@@ -338,7 +328,7 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08r-Jz-GhY" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
-                            <rect key="frame" x="124" y="98" width="95" height="40"/>
+                            <rect key="frame" x="124" y="97.666666666666629" width="95" height="40"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                             <color key="tintColor" systemColor="labelColor"/>
@@ -373,7 +363,7 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKc-lU-ws2" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
-                            <rect key="frame" x="234" y="98" width="96" height="40"/>
+                            <rect key="frame" x="234" y="97.666666666666629" width="96" height="40"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                             <color key="tintColor" systemColor="labelColor"/>
@@ -408,7 +398,7 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT3-WA-RRk" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="98" width="109" height="40"/>
+                            <rect key="frame" x="0.0" y="97.666666666666629" width="109" height="40"/>
                             <color key="backgroundColor" red="0.16078431369999999" green="0.066666666669999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                             <color key="tintColor" systemColor="labelColor"/>
@@ -505,14 +495,6 @@
             </constraints>
             <point key="canvasLocation" x="-166" y="-210"/>
         </view>
-        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K9e-HS-kyN">
-            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <nil key="textColor"/>
-            <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="479" y="140"/>
-        </label>
     </objects>
     <designables>
         <designable name="08r-Jz-GhY">
@@ -520,6 +502,9 @@
         </designable>
         <designable name="DKc-lU-ws2">
             <size key="intrinsicContentSize" width="96" height="40"/>
+        </designable>
+        <designable name="GDJ-Sk-M6z">
+            <size key="intrinsicContentSize" width="129" height="34"/>
         </designable>
         <designable name="M0i-rp-ly6">
             <size key="intrinsicContentSize" width="106" height="40"/>
@@ -529,6 +514,9 @@
         </designable>
         <designable name="Y5z-yk-eyX">
             <size key="intrinsicContentSize" width="103" height="40"/>
+        </designable>
+        <designable name="iP5-R2-edj">
+            <size key="intrinsicContentSize" width="140" height="34"/>
         </designable>
         <designable name="zT3-WA-RRk">
             <size key="intrinsicContentSize" width="109" height="40"/>

@@ -16,24 +16,19 @@ class SignInViewController: UIViewController {
     
     
     @IBAction func signUpButton(_ sender: Any) {
-        let vc =  ProfileViewController()
-        vc.title = "Sign Up"
+        let vc =  TabBarViewController()
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .partialCurl
-        self.navigationController?.pushViewController(vc, animated: true)
-
+        present(vc, animated: true)
     }
     
 
     @IBAction func creatAccauntButton(_ sender: Any) {
-        
         let vc = SignUpViewController()
         vc.title = "Sign Up"
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .partialCurl
-        self.navigationController?.pushViewController(vc, animated: true)
+        present(vc, animated: true)
     }
     
 }

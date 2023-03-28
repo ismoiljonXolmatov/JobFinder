@@ -25,11 +25,10 @@ class SignUpViewController: UIViewController {
       }
     
     @IBAction func signUpButton(_ sender: Any) {
-        let vc = ProfileViewController()
+        let vc = TabBarViewController()
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc, animated: true)
-        
+        present(vc, animated: true)
     }
     
     @IBAction func signInButton(_ sender: Any) {
@@ -37,7 +36,8 @@ class SignUpViewController: UIViewController {
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.modalPresentationStyle = .fullScreen
         vc.title = "SignIn"
-        self.navigationController?.pushViewController(vc, animated: true)
+        present(vc, animated: true)
+        
     }
     
     }
