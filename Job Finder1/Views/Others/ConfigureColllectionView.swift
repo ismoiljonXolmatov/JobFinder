@@ -13,11 +13,40 @@ protocol ConfigureColllectionViewDeleagte: AnyObject {
 }
 class ConfigureColllectionView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    
+    let jobs: [String] = ["$UI/UX Designer","Product Designer","Visual Designer","Visual Designer"]
+    
+    let saleries: [String] = ["$4500/m","$6000/m","$3800/m","$1200/m"]
+
+    let workTime: [String] = ["Full Time","Full Time","10 hour", "6 hour"]
+
+    var companyImages: [UIImage?] = [
+      UIImage(named: "Facebook"),
+      
+      UIImage(named: "spotify"),
+      
+      UIImage(named: "netflix"),
+      
+      UIImage(named: "Spotify 1"),
+  ]
+    
+    let bacgroundColors: [UIColor] = [
+        UIColorFromRGB(rgbValue: 0x1445B4),
+        
+        UIColorFromRGB(rgbValue: 0xE5FFEF),
+        UIColor.label,
+        UIColorFromRGB(rgbValue: 0xE4F2FF),
+        
+      ]
+        
+     
+    
     public weak var delegate: ConfigureColllectionViewDeleagte?
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        workTime.count
+        
     }
-    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+    static func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         return UIColor(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
@@ -30,25 +59,12 @@ class ConfigureColllectionView: UIView, UICollectionViewDataSource, UICollection
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VerticalCollectionViewCell.identifier, for: indexPath) as? VerticalCollectionViewCell else {
             return UICollectionViewCell()
         }
-        if indexPath.row == 0 {
-            cell.companyImage.image = UIImage(named: "Facebook")
-            cell.jobLabel.text = "UI/UX Designer"
-            cell.companyImage.contentMode = .scaleAspectFill
-        }
-        else if indexPath.row == 1 {
-            cell.companyImage.image = UIImage(named: "spotify")
-            cell.companyImage.backgroundColor = UIColorFromRGB(rgbValue: 0xE5FFEF)
-        
-            cell.jobLabel.text = "Product Designer"
-            cell.companyImage.contentMode = .center
-
-        }
-        else if indexPath.row == 2 {
-            cell.companyImage.image = UIImage(named: "netflix")
-            cell.jobLabel.text = "Visual Designer"
-            cell.companyImage.backgroundColor = .label
-            cell.companyImage.contentMode = .center
-        }
+        cell.companyImage.image = companyImages[indexPath.row]
+        cell.jobLabel.text = jobs[indexPath.row]
+        cell.companyImage.backgroundColor = bacgroundColors[indexPath.row]
+        cell.companyImage.contentMode = .center
+        cell.workTime.text = workTime[indexPath.row]
+        cell.seleryLb.text = saleries[indexPath.row]
         return cell
     }
     

@@ -11,8 +11,6 @@ class EditProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button1 = UIBarButtonItem(image: UIImage(named: "Group"), style: .plain, target: self, action: #selector(didTapCancel))
-        self.navigationItem.leftBarButtonItem  = button1
         navigationItem.leftBarButtonItem?.tintColor = .label
         title = "Edit Profile"
         navigationItem.largeTitleDisplayMode = .never

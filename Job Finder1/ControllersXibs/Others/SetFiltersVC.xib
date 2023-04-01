@@ -18,6 +18,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetFiltersVC" customModule="Job_Finder1" customModuleProvider="target">
             <connections>
+                <outlet property="categoryTextField" destination="cj5-HQ-t4i" id="qV7-2Y-ZZv"/>
+                <outlet property="locationTextField" destination="iP5-R2-edj" id="tjG-mR-Yf6"/>
+                <outlet property="saleryTextField" destination="GDJ-Sk-M6z" id="dEr-Ut-EZV"/>
+                <outlet property="subCategoryTextField" destination="mZ3-fO-wZs" id="Zdt-4X-Pho"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -134,23 +138,23 @@
                                         <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Location"/>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR4-ae-McT">
-                                    <rect key="frame" x="142" y="52" width="18" height="22"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TE1-W1-TON">
+                                    <rect key="frame" x="144" y="51.333333333333314" width="18" height="22"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="down-small"/>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <constraints>
+                                <constraint firstAttribute="trailing" secondItem="iP5-R2-edj" secondAttribute="trailing" id="1rW-3E-AVq"/>
+                                <constraint firstItem="TE1-W1-TON" firstAttribute="centerY" secondItem="iP5-R2-edj" secondAttribute="centerY" id="DNK-RD-qrS"/>
                                 <constraint firstItem="iP5-R2-edj" firstAttribute="top" secondItem="9Qn-Bc-b38" secondAttribute="bottom" constant="15" id="GhN-eJ-40B"/>
                                 <constraint firstItem="iP5-R2-edj" firstAttribute="leading" secondItem="Iue-Ko-a49" secondAttribute="leading" id="PI9-4e-0Up"/>
                                 <constraint firstItem="9Qn-Bc-b38" firstAttribute="top" secondItem="Iue-Ko-a49" secondAttribute="top" id="VkM-9x-rb9"/>
-                                <constraint firstAttribute="bottom" secondItem="JR4-ae-McT" secondAttribute="bottom" constant="13" id="aRi-Sb-Xxg"/>
-                                <constraint firstAttribute="trailing" secondItem="iP5-R2-edj" secondAttribute="trailing" id="ba1-sB-b3g"/>
                                 <constraint firstAttribute="width" constant="170" id="csE-o6-Ykc"/>
+                                <constraint firstAttribute="trailing" secondItem="TE1-W1-TON" secondAttribute="trailing" constant="8" id="nMa-gt-LWV"/>
                                 <constraint firstItem="9Qn-Bc-b38" firstAttribute="leading" secondItem="Iue-Ko-a49" secondAttribute="leading" id="rCJ-FK-QAV"/>
                                 <constraint firstAttribute="bottom" secondItem="iP5-R2-edj" secondAttribute="bottom" id="ysG-ZP-234"/>
-                                <constraint firstAttribute="trailing" secondItem="JR4-ae-McT" secondAttribute="trailing" constant="10" id="yuQ-m4-G0o"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpT-Es-kWZ">
@@ -165,7 +169,7 @@
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$2k-$5k" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-Sk-M6z" customClass="DesignableUITextField" customModule="Job_Finder1" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="37.666666666666686" width="170" height="49.333333333333343"/>
                                     <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="14"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -493,7 +497,7 @@
                 <constraint firstItem="OMX-TN-5F6" firstAttribute="trailing" secondItem="wTj-wn-KZr" secondAttribute="trailing" id="sWU-08-hrU"/>
                 <constraint firstItem="OMX-TN-5F6" firstAttribute="leading" secondItem="wTj-wn-KZr" secondAttribute="leading" id="tf8-Lb-97C"/>
             </constraints>
-            <point key="canvasLocation" x="-166" y="-210"/>
+            <point key="canvasLocation" x="-167" y="-229"/>
         </view>
     </objects>
     <designables>
@@ -504,7 +508,7 @@
             <size key="intrinsicContentSize" width="96" height="40"/>
         </designable>
         <designable name="GDJ-Sk-M6z">
-            <size key="intrinsicContentSize" width="129" height="34"/>
+            <size key="intrinsicContentSize" width="85" height="34"/>
         </designable>
         <designable name="M0i-rp-ly6">
             <size key="intrinsicContentSize" width="106" height="40"/>
@@ -515,8 +519,14 @@
         <designable name="Y5z-yk-eyX">
             <size key="intrinsicContentSize" width="103" height="40"/>
         </designable>
+        <designable name="cj5-HQ-t4i">
+            <size key="intrinsicContentSize" width="118" height="34"/>
+        </designable>
         <designable name="iP5-R2-edj">
-            <size key="intrinsicContentSize" width="140" height="34"/>
+            <size key="intrinsicContentSize" width="86" height="34"/>
+        </designable>
+        <designable name="mZ3-fO-wZs">
+            <size key="intrinsicContentSize" width="143" height="34"/>
         </designable>
         <designable name="zT3-WA-RRk">
             <size key="intrinsicContentSize" width="109" height="40"/>

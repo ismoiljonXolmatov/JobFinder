@@ -9,6 +9,14 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    static func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+       return UIColor(
+           red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+           green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+           blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+           alpha: CGFloat(1.0)
+       )
+   }
     
     @IBOutlet var menuBar: UIButton!
     
@@ -37,7 +45,21 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet var verticalCollectionView: UICollectionView!
     
-    var data = [["google 1", "Lead Product Manager"], ["spotify", "Senior UI Designer"], ["netflix", "Visual Designer"]]
+    let jobs: [String] = ["Lead Product Manager","Senior UI Designer","Visual Designer"]
+    
+    let companies: [String] = ["Google","Spotify","Netflix"]
+
+    var companyImages: [UIImage?] = [
+      UIImage(named: "google 1"),
+      UIImage(named: "spotify"),
+      UIImage(named: "netflix"),
+  ]
+    let bacgroundColors: [UIColor] = [
+        UIColorFromRGB(rgbValue: 0xE4F2FF),
+        UIColorFromRGB(rgbValue: 0xE5FFEF),
+        UIColorFromRGB(rgbValue: 0x101010),
+      ]
+        
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +72,7 @@ class ProfileViewController: UIViewController {
 
         verticalCollectionView.dataSource = viewModel
         verticalCollectionView.delegate = viewModel
+        verticalCollectionView.showsVerticalScrollIndicator = false
         collectionView.register(ProfileHorizontalCVC.self, forCellWithReuseIdentifier: ProfileHorizontalCVC.identifier)
         verticalCollectionView.register(VerticalCollectionViewCell.self, forCellWithReuseIdentifier: VerticalCollectionViewCell.identifier)
     }
@@ -58,44 +81,28 @@ class ProfileViewController: UIViewController {
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-    }
-    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
+        return companyImages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProfileHorizontalCVC.identifier, for: indexPath) as? ProfileHorizontalCVC else {
             return UICollectionViewCell()
         }
-        
-        if indexPath.row == 0 {
-            cell.imageView.image = UIImage(named: "google 1")
-            cell.jobLabel.text = "Lead Product Manager"
-            
-        } else if indexPath.row == 1 {
-            cell.imageView.image = UIImage(named: "spotify")
-            cell.googleLb.text = "Spotify"
-            cell.imageView.backgroundColor = UIColorFromRGB(rgbValue: 0xE5FFEF)
-            cell.jobLabel.text = "Senior UI Designer"
-        }
-        else if indexPath.row == 2 {
-            cell.imageView.image = UIImage(named: "netflix")
-            cell.imageView.backgroundColor = .label
-            cell.googleLb.text = "Netflix"
-            cell.jobLabel.text = "Visual Designer"
-        }
+        cell.imageView.image = companyImages[indexPath.row]
+        cell.jobLabel.text = jobs[indexPath.row]
+        cell.imageView.backgroundColor = bacgroundColors[indexPath.row]
+        cell.googleLb.text = companies[indexPath.row]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         let vc = ApplyVC()
+        vc.modalPresentationStyle = .popover
+        vc.jobLabel.text = jobs[indexPath.row]
+        vc.companyLabel.text = companies[indexPath.row]
+        vc.companyIamgeView.image = companyImages[indexPath.row]
+        vc.companyIamgeView.backgroundColor = bacgroundColors[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
         navigationController?.navigationBar.topItem?.backButtonTitle = ""
     }

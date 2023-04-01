@@ -30,7 +30,8 @@ class VerticalCollectionViewCell: UICollectionViewCell {
         label.font = .systemFont(ofSize: 16, weight: .semibold)
         return label
     }()
-    private let seleryLb: UILabel = {
+    
+     let seleryLb: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont(name: "poppins", size: 12)
@@ -40,7 +41,7 @@ class VerticalCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-       public var  fullTimeLb: UILabel = {
+       public var  workTime: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont(name: "poppins", size: 12)
@@ -49,12 +50,13 @@ class VerticalCollectionViewCell: UICollectionViewCell {
         label.textColor = .gray
         return label
     }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(companyImage)
         contentView.addSubview(jobLabel)
         contentView.addSubview(seleryLb)
-        contentView.addSubview(fullTimeLb)
+        contentView.addSubview(workTime)
         contentView.layer.cornerRadius = 20
         contentView.backgroundColor = .tertiarySystemBackground
         addConstraints()
@@ -74,8 +76,8 @@ class VerticalCollectionViewCell: UICollectionViewCell {
             jobLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
             jobLabel.leadingAnchor.constraint(equalTo: companyImage.trailingAnchor, constant: 20),
             
-            fullTimeLb.leadingAnchor.constraint(equalTo: companyImage.trailingAnchor, constant: 20),
-            fullTimeLb.topAnchor.constraint(equalTo: jobLabel.bottomAnchor, constant: 7),
+            workTime.leadingAnchor.constraint(equalTo: companyImage.trailingAnchor, constant: 20),
+            workTime.topAnchor.constraint(equalTo: jobLabel.bottomAnchor, constant: 7),
             
             seleryLb.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             seleryLb.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 34)

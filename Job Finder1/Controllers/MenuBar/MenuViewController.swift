@@ -11,8 +11,9 @@ class MenuViewController: UIViewController {
 
     @IBAction func editProfileButton(_ sender: Any) {
         let vc = EditProfileViewController()
+        let button1 = UIBarButtonItem(image: UIImage(named: "Group"), style: .plain, target: self, action: #selector(didTapBack))
+        vc.navigationItem.leftBarButtonItem  = button1
         navigationController?.pushViewController(vc, animated: true)
-
     }
     
     @IBAction func applacationsButton(_ sender: Any) {

@@ -32,18 +32,13 @@ class ChatViewController: UIViewController {
         addConstraints()
         let button1 = UIBarButtonItem(image: UIImage(named: "Group"), style: .plain, target: self, action: #selector(didTapCancel))
         self.navigationItem.leftBarButtonItem  = button1
-        let button2 = UIBarButtonItem(image: UIImage(named: "phonecall"), style: .plain, target: self, action: #selector(didTapSearch))
+        let button2 = UIBarButtonItem(image: UIImage(named: "phonecall"), style: .plain, target: self, action:nil)
         self.navigationItem.rightBarButtonItem  = button2
         navigationItem.largeTitleDisplayMode = .never
 
     }
     @objc func didTapCancel() {
         self.navigationController?.popViewController(animated: true)
-    }
-    
-    @objc func didTapSearch() {
-        let vc = SearchViewController()
-        navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {

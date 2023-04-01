@@ -24,10 +24,10 @@ class TabBarViewController: UITabBarController {
         let messageVC = MessageViewController()
         let profileVC = EditProfileViewController()
         let searchVC = SearchViewController()
-        homeVC.navigationItem.largeTitleDisplayMode = .automatic
-        messageVC.navigationItem.largeTitleDisplayMode = .automatic
-        profileVC.navigationItem.largeTitleDisplayMode = .automatic
-        searchVC.navigationItem.largeTitleDisplayMode = .automatic
+        homeVC.navigationItem.largeTitleDisplayMode = .never
+        messageVC.navigationItem.largeTitleDisplayMode = .never
+        profileVC.navigationItem.largeTitleDisplayMode = .never
+        searchVC.navigationItem.largeTitleDisplayMode = .never
         
         
         let nav1 = UINavigationController(rootViewController: homeVC)

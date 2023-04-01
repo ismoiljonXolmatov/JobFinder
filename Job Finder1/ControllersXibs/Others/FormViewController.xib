@@ -15,6 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormViewController" customModule="Job_Finder1" customModuleProvider="target">
             <connections>
+                <outlet property="countryTextField" destination="9oK-NF-34z" id="dRI-va-JUH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,13 +25,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zap-g3-uQk">
-                    <rect key="frame" x="20" y="119.00000000000001" width="85" height="22.666666666666671"/>
+                    <rect key="frame" x="20" y="119.00000000000001" width="78" height="18.666666666666671"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ismoil" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqa-Kv-sjw" customClass="myTextfield" customModule="Job_Finder1" customModuleProvider="target">
-                    <rect key="frame" x="20" y="151.66666666666666" width="142" height="52"/>
+                    <rect key="frame" x="20" y="147.66666666666666" width="142" height="52"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="C5E-te-Ddb"/>
                         <constraint firstAttribute="width" constant="142" id="E2l-zf-sZQ"/>
@@ -44,13 +45,13 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feI-L4-7Ou">
-                    <rect key="frame" x="20.000000000000007" y="223.66666666666666" width="112.66666666666669" height="22.666666666666657"/>
+                    <rect key="frame" x="20.000000000000007" y="219.66666666666666" width="102.66666666666669" height="18.666666666666657"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ismoilxolmatoviosdev@gmail.com" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4UH-pi-ypg" customClass="myTextfield" customModule="Job_Finder1" customModuleProvider="target">
-                    <rect key="frame" x="20" y="256.33333333333331" width="353" height="52"/>
+                    <rect key="frame" x="20" y="248.33333333333337" width="353" height="52"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="7S2-w0-YAJ"/>
                     </constraints>
@@ -63,13 +64,13 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaX-8O-0SF">
-                    <rect key="frame" x="230.99999999999997" y="119.00000000000001" width="84.666666666666657" height="22.666666666666671"/>
+                    <rect key="frame" x="230.99999999999997" y="119.00000000000001" width="77.666666666666657" height="18.666666666666671"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Xolmatov" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcN-dZ-GMp" customClass="myTextfield" customModule="Job_Finder1" customModuleProvider="target">
-                    <rect key="frame" x="231" y="151.66666666666666" width="142" height="52"/>
+                    <rect key="frame" x="231" y="147.66666666666666" width="142" height="52"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="142" id="2za-vk-M0Y"/>
                         <constraint firstAttribute="height" constant="52" id="cO4-CE-sDi"/>
@@ -83,16 +84,16 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVu-Ml-z63">
-                    <rect key="frame" x="20" y="328.33333333333331" width="353" height="89.666666666666686"/>
+                    <rect key="frame" x="20" y="320.33333333333331" width="353" height="85.666666666666686"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngF-bt-l6f">
-                            <rect key="frame" x="0.0" y="0.0" width="64" height="22.666666666666668"/>
+                            <rect key="frame" x="0.0" y="0.0" width="57" height="18.666666666666668"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="            USA" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9oK-NF-34z" customClass="myTextfield" customModule="Job_Finder1" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="37.666666666666686" width="353" height="52"/>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Canada" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9oK-NF-34z" customClass="DesignableUITextField" customModule="Job_Finder1" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="33.666666666666686" width="353" height="52"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="qVc-0x-Hpi"/>
                             </constraints>
@@ -102,20 +103,14 @@
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="12"/>
                                 </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Ellipse 110"/>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 110" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-Bb-Xvh">
-                            <rect key="frame" x="20" y="52.666666666666686" width="23" height="23"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="23" id="HRq-Zx-G2T"/>
-                                <constraint firstAttribute="height" constant="23" id="J28-ar-cCt"/>
-                            </constraints>
-                        </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-kt-kxv">
-                            <rect key="frame" x="324" y="52.666666666666686" width="19" height="22"/>
+                            <rect key="frame" x="325" y="48.666666666666686" width="18" height="22"/>
                             <color key="tintColor" systemColor="labelColor"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" image="chevron.down" catalog="system"/>
+                            <state key="normal" image="down-small"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -124,31 +119,29 @@
                         <constraint firstItem="9oK-NF-34z" firstAttribute="top" secondItem="ngF-bt-l6f" secondAttribute="bottom" constant="15" id="EcO-SH-yIm"/>
                         <constraint firstAttribute="bottom" secondItem="9oK-NF-34z" secondAttribute="bottom" id="SzE-Xa-nlB"/>
                         <constraint firstItem="9oK-NF-34z" firstAttribute="leading" secondItem="QVu-Ml-z63" secondAttribute="leading" id="XfY-Ac-Sn2"/>
-                        <constraint firstAttribute="bottom" secondItem="aY0-Bb-Xvh" secondAttribute="bottom" constant="14" id="bbx-fG-sGR"/>
                         <constraint firstAttribute="trailing" secondItem="Flt-kt-kxv" secondAttribute="trailing" constant="10" id="fUL-dg-wNK"/>
-                        <constraint firstItem="aY0-Bb-Xvh" firstAttribute="leading" secondItem="QVu-Ml-z63" secondAttribute="leading" constant="20" id="ffw-hM-k1V"/>
                         <constraint firstAttribute="trailing" secondItem="9oK-NF-34z" secondAttribute="trailing" id="j1J-K2-z9b"/>
                         <constraint firstItem="ngF-bt-l6f" firstAttribute="leading" secondItem="QVu-Ml-z63" secondAttribute="leading" id="nAP-Nc-Ei2"/>
                         <constraint firstItem="ngF-bt-l6f" firstAttribute="top" secondItem="QVu-Ml-z63" secondAttribute="top" id="ohP-z3-umJ"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBi-5j-tY8">
-                    <rect key="frame" x="20.000000000000007" y="438" width="112.66666666666669" height="22.666666666666686"/>
+                    <rect key="frame" x="20.000000000000007" y="426" width="102.66666666666669" height="18.666666666666686"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJt-fV-Q6j" customClass="MyView" customModule="Job_Finder1" customModuleProvider="target">
-                    <rect key="frame" x="20" y="644.33333333333337" width="353" height="70"/>
+                    <rect key="frame" x="20" y="624.33333333333337" width="353" height="70"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPJ-Nc-k22">
-                            <rect key="frame" x="176" y="44" width="11" height="18"/>
+                            <rect key="frame" x="171.66666666666666" y="44" width="11" height="18"/>
                             <color key="tintColor" systemColor="labelColor"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="Icon"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A50-7H-8yj" userLabel="Upload Here">
-                            <rect key="frame" x="132" y="14.000000000000002" width="98.666666666666686" height="22.666666666666671"/>
+                            <rect key="frame" x="132" y="14.000000000000002" width="90.333333333333314" height="18.666666666666671"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -169,13 +162,13 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgG-VX-uTc">
-                    <rect key="frame" x="20" y="611.66666666666663" width="23.333333333333329" height="22.666666666666629"/>
+                    <rect key="frame" x="20" y="595.66666666666663" width="21.333333333333329" height="18.666666666666629"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4v-vd-Zk1" customClass="MyView" customModule="Job_Finder1" customModuleProvider="target">
-                    <rect key="frame" x="20" y="475.66666666666674" width="353" height="116"/>
+                    <rect key="frame" x="20" y="459.66666666666674" width="353" height="116"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Taq-fx-Hwg">
                             <rect key="frame" x="0.0" y="0.0" width="353" height="116"/>
@@ -203,7 +196,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-vq-RW2" customClass="myButton" customModule="Job_Finder1" customModuleProvider="target">
-                    <rect key="frame" x="20" y="734.33333333333337" width="353" height="54"/>
+                    <rect key="frame" x="20" y="714.33333333333337" width="353" height="54"/>
                     <color key="backgroundColor" red="0.16078431369999999" green="0.066666666669999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="jJc-hR-u7x"/>
@@ -259,25 +252,25 @@
     </objects>
     <designables>
         <designable name="0fi-vq-RW2">
-            <size key="intrinsicContentSize" width="70.666666666666671" height="36.666666666666664"/>
+            <size key="intrinsicContentSize" width="65" height="32.666666666666664"/>
         </designable>
         <designable name="4UH-pi-ypg">
-            <size key="intrinsicContentSize" width="269" height="34"/>
+            <size key="intrinsicContentSize" width="239" height="34"/>
         </designable>
         <designable name="9oK-NF-34z">
-            <size key="intrinsicContentSize" width="100" height="34"/>
+            <size key="intrinsicContentSize" width="121" height="34"/>
         </designable>
         <designable name="jqa-Kv-sjw">
-            <size key="intrinsicContentSize" width="70" height="34"/>
+            <size key="intrinsicContentSize" width="65" height="34"/>
         </designable>
         <designable name="vcN-dZ-GMp">
-            <size key="intrinsicContentSize" width="95" height="34"/>
+            <size key="intrinsicContentSize" width="87" height="34"/>
         </designable>
     </designables>
     <resources>
         <image name="Ellipse 110" width="23" height="23"/>
         <image name="Icon" width="11" height="14"/>
-        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="down-small" width="18" height="18"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

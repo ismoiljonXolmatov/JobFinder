@@ -53,6 +53,7 @@
 		187728BF29C2F7A5003C3483 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187728BD29C2F7A5003C3483 /* FormViewController.swift */; };
 		187728C029C2F7A5003C3483 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187728BE29C2F7A5003C3483 /* FormViewController.xib */; };
 		18A689F029D2D0C400E675C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A689EF29D2D0C400E675C2 /* Assets.xcassets */; };
+		18CACB6D29D83AF0001E3AB3 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CACB6C29D83AF0001E3AB3 /* NotificationsViewController.swift */; };
 		18F1A59029BCD79000A69ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */; };
 		18F1A59129BCD79000A69ADE /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */; };
 		18F1A59429BCED4500A69ADE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A59229BCED4500A69ADE /* SignInViewController.swift */; };
@@ -117,6 +118,7 @@
 		187728BD29C2F7A5003C3483 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		187728BE29C2F7A5003C3483 /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
 		18A689EF29D2D0C400E675C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CACB6C29D83AF0001E3AB3 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		18F1A58E29BCD79000A69ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		18F1A58F29BCD79000A69ADE /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		18F1A59229BCED4500A69ADE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			children = (
 				18538FC829CC1BA5001B7C83 /* ApplacationsViewController.swift */,
 				180185D629C9D9E700E0B02D /* MenuViewController.swift */,
+				18CACB6C29D83AF0001E3AB3 /* NotificationsViewController.swift */,
 			);
 			path = MenuBar;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				18F1A59429BCED4500A69ADE /* SignInViewController.swift in Sources */,
 				187728B529C0CABF003C3483 /* ApplyVC.swift in Sources */,
 				18F43F6929C4902200D071D5 /* ChatViewController.swift in Sources */,
+				18CACB6D29D83AF0001E3AB3 /* NotificationsViewController.swift in Sources */,
 				185DE5AF29BE1AC600DF8406 /* ProfileHorizontalCVC.swift in Sources */,
 				185DE5BA29BEE91F00DF8406 /* ConfigureColllectionView.swift in Sources */,
 				18F1A59029BCD79000A69ADE /* LaunchViewController.swift in Sources */,
