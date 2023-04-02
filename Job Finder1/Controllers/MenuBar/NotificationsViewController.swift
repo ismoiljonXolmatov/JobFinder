@@ -7,8 +7,23 @@
 
 import UIKit
 
-class NotificationsViewController: UIViewController {
+class NotificationsViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
+    
+    let datas: [String] = [
+        "New Post", "Got Hired", "Get Rejected", "Message", "Call", "Dark Mode"
+    ]
+    
+    let definition: [String] = [
+    "If any new post update", "If you get hired any company", "If you rejected by any company", "Got any new massage", "Have a call", "Enable dark theme"
+    ]
+    
+    private let notifTableView: UITableView = {
+       let tableView = UITableView()
+        tableView.showsVerticalScrollIndicator = false
+        tableView.register(NotificationTableViewCell.self, forCellReuseIdentifier: NotificationTableViewCell.identifier)
+        return tableView
+    }()
     static func UIColorFromRGB(rgbValue: UInt) -> UIColor {
        return UIColor(
            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
@@ -18,39 +33,27 @@ class NotificationsViewController: UIViewController {
        )
    }
     
-    private let switchButton: UISwitch = {
-        let bt = UISwitch()
-        bt.isOn = true
-        bt.onTintColor = UIColorFromRGB(rgbValue: 0x291150)
-        return bt
-    }()
-    
-     private let bigLb: UILabel = {
-       let label = UILabel()
-        label.font = UIFont(name: "Poppins-Medium", size: 18)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .label
-        label.numberOfLines = 1
-        return label
-        
-    }()
-    
-     private let littleLb: UILabel = {
-       let label = UILabel()
-        label.font = UIFont(name: "Poppins-regular", size: 12)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .gray
-         
-        return label
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(bigLb)
-        view.addSubview(switchButton)
-        view.addSubview(littleLb)
-        addConstraints()
+        view.addSubview(notifTableView)
+        notifTableView.frame = view.bounds
+        notifTableView.delegate = self
+        notifTableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        datas.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationTableViewCell.identifier, for: indexPath) as? NotificationTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.bigLb.text = datas[indexPath.row]
+        cell.littleLb.text = definition[indexPath.row]
+        
+        return cell
     }
    
-
 }

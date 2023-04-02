@@ -10,7 +10,7 @@ import UIKit
 class MessageTableViewCell: UITableViewCell {
     
     public var userProfileImageView: UIImageView = {
-       let imageview = UIImageView()
+        let imageview = UIImageView()
         imageview.clipsToBounds = true
         imageview.image = UIImage(named: "Avatar")
         imageview.translatesAutoresizingMaskIntoConstraints = false
@@ -19,17 +19,17 @@ class MessageTableViewCell: UITableViewCell {
     }()
     
     public var unreadNumberIMV: UIImageView = {
-       let imageview = UIImageView()
+        let imageview = UIImageView()
         imageview.clipsToBounds = true
         imageview.image = UIImage(named: "Avatar7")
-       imageview.translatesAutoresizingMaskIntoConstraints = false
+        imageview.translatesAutoresizingMaskIntoConstraints = false
         imageview.layer.cornerRadius = imageview.height/2
         return imageview
     }()
     
     
     public var nameLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.text = "Abdulloh"
         label.font = UIFont(name: "poppins", size: 16)
         label.font = .systemFont(ofSize: 16, weight: .medium)
@@ -41,7 +41,7 @@ class MessageTableViewCell: UITableViewCell {
     }()
     
     public var messageLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.font = UIFont(name: "poppins", size: 14)
         label.font = .systemFont(ofSize: 14, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -72,30 +72,22 @@ class MessageTableViewCell: UITableViewCell {
             nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             nameLabel.leadingAnchor.constraint(equalTo: userProfileImageView.trailingAnchor, constant: 10),
             nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 50),
-
-     
+            
+            
             messageLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 0),
             messageLabel.leadingAnchor.constraint(equalTo: userProfileImageView.trailingAnchor, constant: 15),
             messageLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             messageLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 15),
-
+            
             
             unreadNumberIMV.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
             unreadNumberIMV.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 13),
             unreadNumberIMV.heightAnchor.constraint(equalToConstant: 24),
             unreadNumberIMV.widthAnchor.constraint(equalToConstant: 24)
         ])
-       
     }
-    
-    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    
-    
- 
 }

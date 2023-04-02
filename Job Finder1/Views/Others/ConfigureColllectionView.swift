@@ -11,8 +11,8 @@ import UIKit
 protocol ConfigureColllectionViewDeleagte: AnyObject {
     func didTapJob()
 }
+
 class ConfigureColllectionView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
-    
     
     let jobs: [String] = ["$UI/UX Designer","Product Designer","Visual Designer","Visual Designer"]
     
