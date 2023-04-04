@@ -32,14 +32,11 @@ class ConfigureColllectionView: UIView, UICollectionViewDataSource, UICollection
     
     let bacgroundColors: [UIColor] = [
         UIColorFromRGB(rgbValue: 0x1445B4),
-        
         UIColorFromRGB(rgbValue: 0xE5FFEF),
         UIColor.label,
         UIColorFromRGB(rgbValue: 0xE4F2FF),
         
       ]
-        
-     
     
     public weak var delegate: ConfigureColllectionViewDeleagte?
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

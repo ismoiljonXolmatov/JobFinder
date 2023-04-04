@@ -32,19 +32,32 @@ class NotificationsViewController: UIViewController,UITableViewDelegate, UITable
            alpha: CGFloat(1.0)
        )
    }
-    
-    
-    override func viewDidLoad() {
+     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(notifTableView)
         notifTableView.frame = view.bounds
         notifTableView.delegate = self
         notifTableView.dataSource = self
+        notifTableView.separatorStyle = .none
+        notifTableView.allowsSelection = false
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = true
+        setNeedsStatusBarAppearanceUpdate()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         datas.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationTableViewCell.identifier, for: indexPath) as? NotificationTableViewCell else {
@@ -55,5 +68,17 @@ class NotificationsViewController: UIViewController,UITableViewDelegate, UITable
         
         return cell
     }
-   
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       80
+    }
+
+
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        // Create a footer view with the same background color as the table view to create the illusion of space between the cells
+        let footerView = UIView()
+        footerView.backgroundColor = tableView.backgroundColor
+        return footerView
+    }
+  
 }

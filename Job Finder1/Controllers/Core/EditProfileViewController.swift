@@ -9,6 +9,8 @@ import UIKit
 
 class EditProfileViewController: UIViewController {
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem?.tintColor = .label
@@ -21,3 +23,4 @@ class EditProfileViewController: UIViewController {
     }
     
 }
+

@@ -56,7 +56,7 @@ class ChatViewController: UIViewController {
         topImageView.layer.cornerRadius = 17.5
         NSLayoutConstraint.activate([
             topImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 100),
-            topImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 51),
+            topImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 61),
             topImageView.heightAnchor.constraint(equalToConstant: 35),
             topImageView.widthAnchor.constraint(equalToConstant: 35),
             

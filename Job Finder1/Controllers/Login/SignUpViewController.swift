@@ -6,18 +6,34 @@
 //
 
 import UIKit
+import SafariServices
 
 class SignUpViewController: UIViewController {
 
     
-    @IBOutlet var backButton: UIButton!
+    private func openFaceBook() {
+        if let url = URL(string: "https://www.facebook.com") {
+        let safariVC = SFSafariViewController(url: url)
+            present(safariVC, animated: true)
+        }
+    }
     
-    @IBAction func tapBackButton(_ sender: Any) {
-        let vc = SignInViewController()
-        vc.navigationItem.largeTitleDisplayMode = .never
-        vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc, animated: true)
-      }
+    private func openGoogle() {
+        if let url = URL(string: "https://accounts.google.com/signup") {
+        let safariVC = SFSafariViewController(url: url)
+            present(safariVC, animated: true)
+        }
+    }
+    
+    
+    
+    @IBAction func openFaceBookButton(_ sender: Any) {
+        openFaceBook()
+    }
+    
+    @IBAction func openGoogleButton(_ sender: Any) {
+        openGoogle()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

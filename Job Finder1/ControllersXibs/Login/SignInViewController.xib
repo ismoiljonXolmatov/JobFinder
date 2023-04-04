@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -163,6 +164,9 @@
                                             <integer key="value" value="12"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="openFaceBookButton:" destination="-1" eventType="touchUpInside" id="LqW-Qm-cUQ"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zN0-pg-fsP">
                                     <rect key="frame" x="114" y="0.0" width="50" height="50"/>
@@ -179,6 +183,9 @@
                                             <integer key="value" value="12"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="openGoogleButton:" destination="-1" eventType="touchUpInside" id="Oxq-lr-Zjj"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -238,10 +245,10 @@
     </objects>
     <designables>
         <designable name="0sv-4i-duN">
-            <size key="intrinsicContentSize" width="152" height="21.333333333333332"/>
+            <size key="intrinsicContentSize" width="142" height="21.333333333333332"/>
         </designable>
         <designable name="xId-jh-cG6">
-            <size key="intrinsicContentSize" width="130.33333333333334" height="21.333333333333332"/>
+            <size key="intrinsicContentSize" width="120.33333333333333" height="21.333333333333332"/>
         </designable>
     </designables>
     <resources>

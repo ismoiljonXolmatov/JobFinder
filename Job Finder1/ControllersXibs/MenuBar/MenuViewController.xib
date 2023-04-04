@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -193,14 +194,38 @@
                         <action selector="editProfileButton:" destination="-1" eventType="touchUpOutside" id="GVy-fZ-Egg"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX4-iC-sBG">
+                    <rect key="frame" x="20" y="433.33333333333331" width="193.33333333333334" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="n4K-dF-2Io"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="notificationButton:" destination="-1" eventType="touchUpInside" id="0IG-fj-2u4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-WE-23T">
+                    <rect key="frame" x="20.000000000000007" y="684.33333333333337" width="93.666666666666686" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="6eT-7f-3Nz"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="logOutButton:" destination="-1" eventType="touchUpInside" id="x3x-ln-K7c"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fHI-gk-2VN"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="yu4-qT-H2y" firstAttribute="leading" secondItem="sjd-Jt-puA" secondAttribute="leading" id="7cX-7Z-gse"/>
                 <constraint firstItem="yb1-6T-cx5" firstAttribute="leading" secondItem="xEf-dh-ac4" secondAttribute="leading" id="FAM-of-Xsg"/>
+                <constraint firstItem="yb1-6T-cx5" firstAttribute="trailing" secondItem="rX4-iC-sBG" secondAttribute="trailing" id="Gwt-kZ-nnc"/>
                 <constraint firstItem="VzQ-AF-Ff9" firstAttribute="leading" secondItem="h38-CQ-QSy" secondAttribute="leading" id="H3L-ou-43W"/>
                 <constraint firstItem="FYa-6W-Q7m" firstAttribute="top" secondItem="gVF-lC-pwN" secondAttribute="bottom" constant="20" id="J47-pl-uOk"/>
+                <constraint firstItem="aZU-WE-23T" firstAttribute="trailing" secondItem="sjd-Jt-puA" secondAttribute="trailing" id="L9m-WA-Rdr"/>
                 <constraint firstItem="1jM-me-afT" firstAttribute="leading" secondItem="MiE-ij-FX5" secondAttribute="leading" id="Nig-wG-JXZ"/>
                 <constraint firstItem="FYa-6W-Q7m" firstAttribute="leading" secondItem="gVF-lC-pwN" secondAttribute="leading" id="OdC-lP-sXx"/>
                 <constraint firstItem="MiE-ij-FX5" firstAttribute="leading" secondItem="xEf-dh-ac4" secondAttribute="leading" id="TDq-eD-yJr"/>
@@ -209,18 +234,22 @@
                 <constraint firstItem="yu4-qT-H2y" firstAttribute="leading" secondItem="yb1-6T-cx5" secondAttribute="leading" id="XFE-pl-maX"/>
                 <constraint firstItem="VzQ-AF-Ff9" firstAttribute="top" secondItem="h38-CQ-QSy" secondAttribute="bottom" constant="30" id="Xgn-6u-xC3"/>
                 <constraint firstItem="MiE-ij-FX5" firstAttribute="top" secondItem="h38-CQ-QSy" secondAttribute="bottom" constant="23" id="YLo-kw-zfl"/>
+                <constraint firstItem="yb1-6T-cx5" firstAttribute="centerY" secondItem="rX4-iC-sBG" secondAttribute="centerY" id="ZIL-Vc-uPS"/>
                 <constraint firstItem="xEf-dh-ac4" firstAttribute="top" secondItem="VzQ-AF-Ff9" secondAttribute="bottom" constant="30" id="ad7-1q-Say"/>
                 <constraint firstItem="gVF-lC-pwN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="atg-eP-Qbv"/>
                 <constraint firstItem="sjd-Jt-puA" firstAttribute="top" secondItem="yu4-qT-H2y" secondAttribute="bottom" constant="142" id="deC-uG-2rE"/>
                 <constraint firstItem="h38-CQ-QSy" firstAttribute="top" secondItem="FYa-6W-Q7m" secondAttribute="bottom" constant="10" id="dy9-3L-tgt"/>
                 <constraint firstItem="gVF-lC-pwN" firstAttribute="top" secondItem="fHI-gk-2VN" secondAttribute="top" constant="56" id="iSn-4h-pcN"/>
                 <constraint firstItem="xEf-dh-ac4" firstAttribute="top" secondItem="MiE-ij-FX5" secondAttribute="bottom" constant="23" id="izh-HK-Iw4"/>
+                <constraint firstItem="sjd-Jt-puA" firstAttribute="centerY" secondItem="aZU-WE-23T" secondAttribute="centerY" id="lM2-dQ-9VJ"/>
                 <constraint firstItem="xEf-dh-ac4" firstAttribute="leading" secondItem="VzQ-AF-Ff9" secondAttribute="leading" id="q4K-Tc-H72"/>
                 <constraint firstItem="yb1-6T-cx5" firstAttribute="top" secondItem="xEf-dh-ac4" secondAttribute="bottom" constant="30" id="sv4-hC-wb5"/>
+                <constraint firstItem="aZU-WE-23T" firstAttribute="leading" secondItem="sjd-Jt-puA" secondAttribute="leading" id="t8T-OT-ZQ1"/>
                 <constraint firstItem="yu4-qT-H2y" firstAttribute="top" secondItem="yb1-6T-cx5" secondAttribute="bottom" constant="30" id="v3L-YF-Rut"/>
+                <constraint firstItem="rX4-iC-sBG" firstAttribute="leading" secondItem="yb1-6T-cx5" secondAttribute="leading" id="y7X-Or-kUr"/>
                 <constraint firstItem="1jM-me-afT" firstAttribute="top" secondItem="MiE-ij-FX5" secondAttribute="bottom" constant="23" id="zGc-oW-ALW"/>
             </constraints>
-            <point key="canvasLocation" x="1166" y="0.0"/>
+            <point key="canvasLocation" x="1165.6488549618321" y="0.0"/>
         </view>
     </objects>
     <designables>

@@ -54,6 +54,8 @@ class ApplacationsViewController: UIViewController {
         return label
     }()
     private let collectionView = UICollectionView(frame: .zero, collectionViewLayout: customLayout())
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
@@ -65,7 +67,17 @@ class ApplacationsViewController: UIViewController {
         navigationItem.leftBarButtonItem = button
         navigationItem.leftBarButtonItem?.tintColor = .label
         addConstraints()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = true
+        setNeedsStatusBarAppearanceUpdate()
+    }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
     
    
@@ -82,7 +94,7 @@ class ApplacationsViewController: UIViewController {
             collectionView.topAnchor.constraint(equalTo: applLabel.bottomAnchor, constant: 20),
             collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
     @objc func didTapBack() {
@@ -93,7 +105,7 @@ class ApplacationsViewController: UIViewController {
         let item = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
-                heightDimension: .absolute(200)))
+                heightDimension: .absolute(180)))
         item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0)
         let group = NSCollectionLayoutGroup.vertical(
             layoutSize: NSCollectionLayoutSize(
