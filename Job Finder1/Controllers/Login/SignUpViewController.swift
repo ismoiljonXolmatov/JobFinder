@@ -53,7 +53,6 @@ class SignUpViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         vc.title = "SignIn"
         present(vc, animated: true)
-        
     }
     
     }
